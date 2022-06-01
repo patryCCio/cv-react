@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/github.io/cv-react/static/css/main.97df4473.css",
-    "main.js": "/github.io/cv-react/static/js/main.6d711397.js",
-    "static/media/layout-big.png": "/github.io/cv-react/static/media/layout-big.c80e20da3d61c49925f9.png",
-    "index.html": "/github.io/cv-react/index.html",
-    "main.97df4473.css.map": "/github.io/cv-react/static/css/main.97df4473.css.map",
-    "main.6d711397.js.map": "/github.io/cv-react/static/js/main.6d711397.js.map"
+    "main.css": "/cv-react/static/css/main.65d6d2ed.css",
+    "main.js": "/cv-react/static/js/main.6d711397.js",
+    "static/media/layout-big.png": "/cv-react/static/media/layout-big.c80e20da3d61c49925f9.png",
+    "index.html": "/cv-react/index.html",
+    "main.65d6d2ed.css.map": "/cv-react/static/css/main.65d6d2ed.css.map",
+    "main.6d711397.js.map": "/cv-react/static/js/main.6d711397.js.map"
   },
   "entrypoints": [
-    "static/css/main.97df4473.css",
+    "static/css/main.65d6d2ed.css",
     "static/js/main.6d711397.js"
   ]
 }
