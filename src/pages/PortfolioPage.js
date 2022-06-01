@@ -60,7 +60,7 @@ const PortfolioPage = () => {
     let limitForLanguage = 0;
     let actualLanguageNumber = 0;
 
-    let urlProject = '../../src/myprojects/' + actualType;
+    let urlProject = './myprojects/' + actualType;
 
     function checkSizeProgressBar() {
       sizeProgressBar = progressBar.offsetWidth;
