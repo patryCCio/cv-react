@@ -1,0 +1,71 @@
+.wrapper{
+    margin: 10px 80px;
+    transition: .2s linear;
+}
+
+.wrapper.active {
+    padding-left: 30vw;
+}
+
+.burger{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 28px;
+    font-family: arial;
+}
+
+.burger span{
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: black;
+    border-radius: 3px;
+    transition: .2s linear;
+}
+
+.burger span:nth-child(1){
+    top: 0;
+}
+
+.burger span:nth-child(2){
+    top: calc(50% - 2px);
+}
+
+.burger span:nth-child(3){
+    bottom: 0;
+}
+
+.burger.active span:nth-child(1){
+    transform: rotate(45deg);
+    top: calc(50% - 2px);
+}
+
+.burger.active span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.burger.active span:nth-child(3){
+    transform: rotate(-45deg);
+    bottom: calc(50% - 2px);
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+
+aside{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30vw;
+    width: 30vw;
+    background-color: #000;
+    transition: .2s linear;
+}
+
+.burger.active + aside{
+    left: 0;
+}

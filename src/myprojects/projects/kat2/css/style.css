@@ -1,0 +1,465 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ebecf2;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 2;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+nav .nav-link, nav .navbar-brand {
+  color: #fff;
+}
+
+nav .nav-link:hover {
+  color: #039dff;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .active {
+  color: #039dff;
+}
+
+nav .fa-bars {
+  padding: 10px;
+  color: #fff;
+}
+
+.text-blue {
+  color: #039dff;
+}
+
+header {
+  color: #fff;
+}
+
+header h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 14px;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/header-mini.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+header .hero-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 0;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  left: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: #fff;
+  -webkit-animation: arrowdown 2s infinite;
+          animation: arrowdown 2s infinite;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+.aboutus .fa-mobile-screen-button, .aboutus .fa-display, .aboutus .fa-file-code, .aboutus .fa-paw, .aboutus .fa-burger, .aboutus .fa-champagne-glasses {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+.aboutus .aboutus-hover {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url("../img/aboutus-hero-small.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: -2;
+}
+
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  top: 0;
+  z-index: -1;
+}
+
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0;
+}
+
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
+
+.aboutus-hero .fa-steam, .aboutus-hero .fa-playstation, .aboutus-hero .fa-xbox {
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+.portfolio {
+  background-color: #ebecf2;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prices {
+  text-align: center;
+}
+
+.prices .prices-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.prices .prices-group .prices-card {
+  min-width: 23%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 30px 35px;
+  -webkit-box-shadow: 0px 0px 8px -2px #42445a;
+          box-shadow: 0px 0px 8px -2px #42445a;
+  padding: 25px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.prices .prices-group .prices-card .prices-caption-card {
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: #039dff;
+}
+
+.prices .prices-group .prices-card .price-offer {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 35px;
+}
+
+.prices .prices-group .prices-card .price-icon {
+  font-size: 23px;
+  padding: 0 5px;
+}
+
+.prices .prices-group .prices-card .price-icon:first-of-type {
+  padding-left: 15px;
+}
+
+.prices .prices-group .prices-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.prices .price-info {
+  margin-top: 60px;
+  font-size: 16px;
+}
+
+.prices .text-muted {
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.team {
+  position: relative;
+  background-image: url("../img/team-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.team h2 {
+  color: #ddd;
+}
+
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.team .card {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card .team-icon {
+  padding: 10px;
+}
+
+.team .card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team .card-body {
+  height: 160px;
+}
+
+.achievements .achievement-icon {
+  padding: 10px;
+  font-size: 35px;
+  color: #039dff;
+}
+
+.achievements .achievement-number {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.achievements .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.contact {
+  position: relative;
+  background-image: url("../img/contact-mini.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.contact h2 {
+  color: #ddd;
+  font-weight: bold;
+}
+
+.contact .underline {
+  background-color: #ddd;
+}
+
+.contact .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.contact .contact-us .contact-item {
+  margin: 30px 0;
+}
+
+.contact .contact-us .contact-item h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 26, 0.85);
+  z-index: -5;
+}
+
+.contact .social-media {
+  padding: 25px;
+}
+
+.contact .social-media i {
+  margin: 0 30px;
+  font-size: 40px;
+}
+
+@-webkit-keyframes arrowdown {
+  20% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes arrowdown {
+  20% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+  header p {
+    font-size: 20px;
+  }
+  .contact {
+    background-image: url("../img/contact-big.jpg");
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    height: 82px;
+  }
+  .aboutus-hero {
+    background-image: url("../img/aboutus-hero-big.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  header .hero-img {
+    background-image: url("../img/header-big.jpg");
+  }
+}
+/*# sourceMappingURL=style.css.map */

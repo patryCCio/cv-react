@@ -1,0 +1,79 @@
+.section-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.section-name i{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.section-name .section-h2{
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.section-name .first-line, .section-name .second-line{
+    margin-bottom: 10px;
+    
+    background-color: var(--main-color);
+}
+
+.section-name .first-line{
+    width: 40%;
+    height: 3px;
+    animation-name: first-line;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.section-name .second-line{
+    width: 25%;
+    height: 2px;
+    animation-name: second-line;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first-line{
+    0%{
+        width: 40%;
+    }
+
+    50%{
+        width: 50%;
+    }
+
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes second-line{
+    0%{
+        width: 25%;
+    }
+
+    50%{
+        width: 35%;
+    }
+
+    100%{
+        width: 25%;
+    }
+}

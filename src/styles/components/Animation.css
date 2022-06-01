@@ -1,0 +1,306 @@
+/* BACKGROUND ANIMATION */
+
+span.section-animation {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  opacity: 1;
+  transform: translate(0, -100%);
+  background: rgb(235, 46, 46);
+  background: linear-gradient(
+    0deg,
+    rgba(235, 46, 46, 1) 0%,
+    rgba(235, 46, 46, 0) 100%
+  );
+  width: 1px;
+}
+
+span.section-animation:nth-of-type(1) {
+  left: 90%;
+  height: 19%;
+  animation: line-animation1 5s linear infinite;
+}
+
+span.section-animation:nth-of-type(2) {
+  left: 68%;
+  height: 10%;
+  animation: line-animation1 5s 1s linear infinite;
+}
+
+span.section-animation:nth-of-type(3) {
+  left: 32%;
+  height: 15%;
+  animation: line-animation1 5s 1.5s linear infinite;
+}
+
+span.section-animation:nth-of-type(4) {
+  left: 10%;
+  height: 12%;
+  animation: line-animation1 5s 0.5s linear infinite;
+}
+
+span.section-animation:nth-of-type(5) {
+  left: 25%;
+  height: 8%;
+  animation: line-animation1 5s 3s linear infinite;
+}
+
+@keyframes line-animation1 {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+  31% {
+    top: 90%;
+  }
+  32% {
+    opacity: 0;
+  }
+  40% {
+    top: 0;
+  }
+}
+
+/* PORTFOLIO ANIMATION */
+.portfolio-animation, .portfolio-animation2{
+  position: absolute;
+  display: block;
+  z-index: -1;
+  height: 2px;
+  background: rgb(235, 46, 46);
+}
+.portfolio-animation {
+  left: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    -90deg,
+    rgba(235, 46, 46, 1) 0%,
+    rgba(235, 46, 46, 0) 100%
+  );
+}
+.portfolio-animation2 {
+  right: 0;
+  transform: translateX(100%);
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(235, 46, 46, 1) 0%,
+    rgba(235, 46, 46, 0) 100%
+  );
+}
+
+.portfolio-animation:nth-of-type(1) {
+  top: 10%;
+  width: 10%;
+}
+.portfolio-animation:nth-of-type(2) {
+  top: 25%;
+  width: 23%;
+}
+.portfolio-animation:nth-of-type(3) {
+  top: 40%;
+  width: 20%;
+}
+.portfolio-animation:nth-of-type(4) {
+  top: 52%;
+  width: 15%;
+}
+.portfolio-animation:nth-of-type(5) {
+  top: 70%;
+  width: 8%;
+}
+.portfolio-animation:nth-of-type(6) {
+  top: 90%;
+  width: 17%;
+}
+.portfolio-animation:nth-of-type(7) {
+  top: 18%;
+  width: 8%;
+}
+.portfolio-animation:nth-of-type(8) {
+  top: 21%;
+  width: 27%;
+}
+.portfolio-animation:nth-of-type(9) {
+  top: 43%;
+  width: 32%;
+}
+.portfolio-animation:nth-of-type(10) {
+  top: 58%;
+  width: 25%;
+}
+.portfolio-animation:nth-of-type(11) {
+  top: 83%;
+  width: 21%;
+}
+.portfolio-animation:nth-of-type(12) {
+  top: 95%;
+  width: 11%;
+}
+
+.portfolio-animation.active:nth-of-type(1) {
+  animation: portfolio-animation1 1.5s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(2) {
+  animation: portfolio-animation1 1.2s 0.5s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(3) {
+  animation: portfolio-animation1 0.8s 0.5s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(4) {
+  animation: portfolio-animation1 1.3s 0.7s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(5) {
+  animation: portfolio-animation1 1s 0.3s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(6) {
+  animation: portfolio-animation1 0.7s 1.2s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(7) {
+  animation: portfolio-animation1 1.1s 0.3s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(8) {
+  animation: portfolio-animation1 1.2s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(9) {
+  animation: portfolio-animation1 0.3s 1.2s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(10) {
+  animation: portfolio-animation1 0.6s 0.3s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(11) {
+  animation: portfolio-animation1 0.5s 0.7s linear infinite;
+}
+.portfolio-animation.active:nth-of-type(12) {
+  animation: portfolio-animation1 0.8s 0.5s linear infinite;
+}
+
+
+
+@keyframes portfolio-animation1 {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+  31% {
+    left: 100%;
+  }
+  32% {
+    opacity: 0;
+  }
+  40% {
+    left: 0;
+  }
+}
+
+
+.portfolio-animation2:nth-of-type(13) {
+  top: 10%;
+  width: 10%;
+}
+.portfolio-animation2:nth-of-type(14) {
+  top: 25%;
+  width: 23%;
+}
+.portfolio-animation2:nth-of-type(15) {
+  top: 40%;
+  width: 20%;
+}
+.portfolio-animation2:nth-of-type(16) {
+  top: 52%;
+  width: 15%;
+}
+.portfolio-animation2:nth-of-type(17) {
+  top: 70%;
+  width: 8%;
+}
+.portfolio-animation2:nth-of-type(18) {
+  top: 90%;
+  width: 17%;
+}
+.portfolio-animation2:nth-of-type(19) {
+  top: 18%;
+  width: 8%;
+}
+.portfolio-animation2:nth-of-type(20) {
+  top: 21%;
+  width: 27%;
+}
+.portfolio-animation2:nth-of-type(21) {
+  top: 43%;
+  width: 32%;
+}
+.portfolio-animation2:nth-of-type(22) {
+  top: 58%;
+  width: 25%;
+}
+.portfolio-animation2:nth-of-type(23) {
+  top: 83%;
+  width: 21%;
+}
+.portfolio-animation2:nth-of-type(24) {
+  top: 95%;
+  width: 11%;
+}
+
+.portfolio-animation2.active:nth-of-type(13) {
+  animation: port-animation2 1.5s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(14) {
+  animation: port-animation2 1.2s 0.5s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(15) {
+  animation: port-animation2 0.8s 0.5s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(16) {
+  animation: port-animation2 1.3s 0.7s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(17) {
+  animation: port-animation2 1s 0.3s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(18) {
+  animation: port-animation2 0.7s 1.2s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(19) {
+  animation: port-animation2 1.1s 0.3s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(20) {
+  animation: port-animation2 1.2s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(21) {
+  animation: port-animation2 0.3s 1.2s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(22) {
+  animation: port-animation2 0.6s 0.3s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(23) {
+  animation: port-animation2 0.5s 0.7s linear infinite;
+}
+.portfolio-animation2.active:nth-of-type(24) {
+  animation: port-animation2 0.8s 0.5s linear infinite;
+}
+
+@keyframes port-animation2 {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+  31% {
+    right: 100%;
+  }
+  32% {
+    opacity: 0;
+  }
+  40% {
+    right: 0;
+  }
+}

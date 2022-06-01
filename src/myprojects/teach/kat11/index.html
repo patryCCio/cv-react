@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przycisk z animacją</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            padding: 10px 25px;
+            font-size: 14px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            margin: 50px;
+            border-style: none;
+            background-color: #ddd;
+            position: relative;
+            overflow: hidden;
+            transition: .4s;
+            border-radius: 5%;
+        }
+
+        span{
+            position: absolute;
+            display: block;
+            width: 100%;
+            background-color: black;
+            height: 3px;
+            bottom: 0;
+            left: -100%;
+            transition: .4s;
+        }
+
+        button:hover{
+            cursor: pointer;
+            color: brown;
+        }
+
+        button:hover span{
+            left: 0;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <button>Przycisk<span></span></button>
+</body>
+</html>

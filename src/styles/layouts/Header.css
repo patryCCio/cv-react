@@ -1,0 +1,12 @@
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--fourth-color);
+}
+
+@media (min-width: 1025px){
+    .header{
+        min-height: 65vh;
+    }
+}
