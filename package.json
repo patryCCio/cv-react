@@ -1,6 +1,6 @@
 {
-  "homepage": "http://patryCCio/github.io/cv-react",
-  "name": "cv",
+  "homepage": "https://patryCCio/github.io/cv-react",
+  "name": "cv-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
