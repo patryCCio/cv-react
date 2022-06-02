@@ -106,7 +106,7 @@ const PortfolioPage = () => {
           teach[languageNumber][1][actualLanguageNumber].title;
         portfolioDescription.textContent =
           teach[languageNumber][1][actualLanguageNumber].message;
-        portfolioA.href = `${urlProject+actualType}/kat${actualLanguageNumber}/index.html`;
+        portfolioA.href = `${urlProject+actualType}/kat${actualNumber}/index.html`;
       } else if (actualType === "projects") {
         portfolioTitle.innerHTML = projects[actualNumber - 1].title;
         portfolioDescription.innerHTML = projects[actualNumber - 1].message;
