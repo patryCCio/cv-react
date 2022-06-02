@@ -5,7 +5,7 @@ import Wrapper from './Wrapper';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/cv-react">
       <Wrapper/>
     </Router>
   );

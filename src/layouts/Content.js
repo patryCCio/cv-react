@@ -8,7 +8,7 @@ const Content = () => {
     <Route key={page.name} path={page.path} element={page.element}/>
   ));
   return (
-      <Routes>
+      <Routes >
         {pages}
         <Route path="*" element={<ErrorPage />} />
       </Routes>

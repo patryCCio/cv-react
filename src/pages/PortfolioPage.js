@@ -60,7 +60,7 @@ const PortfolioPage = () => {
     let limitForLanguage = 0;
     let actualLanguageNumber = 0;
 
-    let urlProject = './myprojects/' + actualType;
+    let urlProject = '/cv-react/myprojects/';
 
     function checkSizeProgressBar() {
       sizeProgressBar = progressBar.offsetWidth;
@@ -106,7 +106,7 @@ const PortfolioPage = () => {
           teach[languageNumber][1][actualLanguageNumber].title;
         portfolioDescription.textContent =
           teach[languageNumber][1][actualLanguageNumber].message;
-          portfolioA.href = `${urlProject}/kat${actualLanguageNumber}/index.html`;
+        portfolioA.href = `${urlProject+actualType}/kat${actualLanguageNumber}/index.html`;
       } else if (actualType === "projects") {
         portfolioTitle.innerHTML = projects[actualNumber - 1].title;
         portfolioDescription.innerHTML = projects[actualNumber - 1].message;
@@ -218,11 +218,10 @@ const PortfolioPage = () => {
       fillSpan();
     }
 
-    function setPadding(index){
+    function setPadding(index) {
       if (index === 0) {
         portfolioLanguage.classList.remove("active");
         portfolioBody.classList.add("active");
-
       } else {
         portfolioLanguage.classList.add("active");
         portfolioBody.classList.remove("active");
@@ -241,7 +240,7 @@ const PortfolioPage = () => {
     buttonsType.forEach((button, index) => {
       button.addEventListener("click", () => {
         setPadding(index);
-          
+
         actualType = button.dataset.key;
         selectButton();
         fillSizeArray();
@@ -315,7 +314,17 @@ const PortfolioPage = () => {
           <p className="portfolio-description">?</p>
         </div>
         <div className="portfolio-bottom">
-          <button className="portfolio-bottom-button"><a href="https://google.com" target="_blank" rel="noopener noreferrer" className='portfolio-look' >Zobacz</a></button>
+          <form method="get">
+            <button className="portfolio-bottom-button" type="submit">
+              <a
+                href="myprojects/teach/kat0/index.html"
+                target="_blank"
+                className="portfolio-look"
+              >
+                Zobacz
+              </a>
+            </button>
+          </form>
           <p className="portfolio-size">
             <span className="portfolio-actual"></span>
             <span
