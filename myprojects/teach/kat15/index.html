@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    img:nth-child(1){
+        opacity: 0;
+        animation: slider 6s linear infinite alternate;
+    }
+
+    img:nth-child(2){
+        opacity: 1;
+        animation: slider 6s linear infinite alternate-reverse;
+    }
+
+    @keyframes slider{
+        0%{
+            opacity: 0;
+        }
+        
+        45%{
+            opacity: 0;
+        }
+
+        55%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 1;
+        }
+
+    }
+ </style>
+</head>
+
+<body>
+ <img src="img1.jpg" alt="">
+ <img src="img2.jpg" alt="">
+</body>
+
+</html>
