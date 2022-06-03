@@ -1,4 +1,4 @@
-import React, { createElement, useEffect } from "react";
+import React, { useEffect } from "react";
 import Section from "../components/Section";
 import "../styles/pages/SkillsPage.css";
 import { SkillsDb } from "../database/SkillsDB";
@@ -22,79 +22,40 @@ const SkillsPage = () => {
     });
   }
 
-  function setInformation(key, actualNumber, leftSide, rightSide) {
+  function setInformation(key, actualNumber, content) {
     const sections = SkillsDb[key].frameworks[actualNumber].sections;
-    leftSide.innerHTML = "";
-    rightSide.innerHTML = "";
+    content.innerHTML = "";
 
     const teach = document.createElement("h3");
     teach.classList.add("inner-h3");
     teach.textContent = "Nauczone";
 
-    const teach2 = document.createElement("h3");
-    teach2.classList.add("inner-h3");
-    teach2.textContent = "Do nauki";
-
-    leftSide.appendChild(teach);
-    rightSide.appendChild(teach2);
+    content.appendChild(teach);
 
     sections.forEach((section, index) => {
-      let isTrue = false;
-      let isFalse = false;
-      let leftSideTrue;
-      let rightSideTrue;
+      let contentTrue;
       let divEl;
-      let divEl2;
+      let contentSide;
+
+      divEl = document.createElement("div");
+      divEl.classList.add("inner-side");
+      contentSide = document.createElement("h4");
+      contentSide.classList.add("h4-title");
+      contentSide.textContent = section.title;
+      divEl.appendChild(contentSide);
 
       for (let x = 0; x < section.lessons.length; x++) {
-        if (section.lessons[x].teached) isTrue = true;
-        if (!section.lessons[x].teached) isFalse = true;
-      }
-
-      if (isTrue) {
-        divEl = document.createElement("div");
-        divEl.classList.add("inner-side");
-        leftSideTrue = document.createElement("h4");
-        leftSideTrue.classList.add("h4-title");
-        leftSideTrue.textContent = section.title;
-        divEl.appendChild(leftSideTrue);
-
-        for (let x = 0; x < section.lessons.length; x++) {
-          if (section.lessons[x].teached) {
-            const p = document.createElement("p");
-            p.classList.add("text");
-            p.textContent = section.lessons[x].text;
-            divEl.appendChild(p);
-          }
+        if (section.lessons[x].teached) {
+          const p = document.createElement("p");
+          const span = document.createElement('span');
+          span.classList.add('inner-text-span');
+          p.classList.add("text");
+          p.appendChild(span);
+          p.innerHTML = p.innerHTML + section.lessons[x].text;
+          divEl.appendChild(p);
         }
       }
-
-      if (isFalse) {
-        divEl2 = document.createElement("div");
-        divEl2.classList.add("inner-side");
-        rightSideTrue = document.createElement("h4");
-        rightSideTrue.classList.add("h4-title");
-        rightSideTrue.textContent = section.title;
-
-        divEl2.appendChild(rightSideTrue);
-
-        for (let x = 0; x < section.lessons.length; x++) {
-          if (!section.lessons[x].teached) {
-            const p = document.createElement("p");
-            p.classList.add("text");
-            p.textContent = section.lessons[x].text;
-            divEl2.appendChild(p);
-          }
-        }
-      }
-
-      if (divEl !== undefined) {
-        leftSide.appendChild(divEl);
-      }
-
-      if (divEl2 !== undefined) {
-        rightSide.appendChild(divEl2);
-      }
+      content.appendChild(divEl);
     });
   }
 
@@ -104,8 +65,7 @@ const SkillsPage = () => {
     const divLanguage = document.querySelector(".skills-language");
     const divType = document.querySelector(".skills-type");
     let firstTurn = true;
-    const rightSide = document.querySelector(".right-side");
-    const leftSide = document.querySelector(".left-side");
+    const content = document.querySelector(".content");
     let actualKey = 0;
     let actualNumber = 0;
 
@@ -146,19 +106,19 @@ const SkillsPage = () => {
         buttonsTypes = document.querySelectorAll(".skills-button-type");
         setActive(actualKey, buttonsLanguages);
         setActive(0, buttonsTypes);
-        setInformation(actualKey, 0, leftSide, rightSide);
+        setInformation(actualKey, 0, content);
 
         buttonsTypes.forEach((btnType) => {
           btnType.addEventListener("click", function () {
             actualNumber = Number(btnType.dataset.key);
             setActive(actualNumber, buttonsTypes);
-            setInformation(actualKey, actualNumber, leftSide, rightSide);
+            setInformation(actualKey, actualNumber, content);
           });
         });
       });
     });
 
-    setInformation(0, 0, leftSide, rightSide);
+    setInformation(0, 0, content);
   }, [SkillsDb]);
 
   return (
@@ -173,8 +133,7 @@ const SkillsPage = () => {
           <div className="skills-type"></div>
         </div>
         <div className="skills-body">
-          <div className="left-side">...</div>
-          <div className="right-side">...</div>
+          <div className="content">...</div>
         </div>
       </div>
     </div>

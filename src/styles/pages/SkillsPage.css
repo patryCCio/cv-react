@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   width: 90%;
-  max-width: 1200px;
+  max-width: 900px;
   min-height: 500px;
   background-color: var(--fourth-color);
   border-radius: 10px;
@@ -89,26 +89,22 @@
   flex-direction: column;
 }
 
-.left-side::-webkit-scrollbar,
-.right-side::-webkit-scrollbar {
+.content::-webkit-scrollbar {
   width: 0.4em;
 }
 
-.left-side::-webkit-scrollbar-track,
-.right-side::-webkit-scrollbar-track {
+.content::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
   border-radius: 5px;
 }
 
-.left-side::-webkit-scrollbar-thumb,
-.right-side::-webkit-scrollbar-thumb {
+.content::-webkit-scrollbar-thumb {
   background-color: var(--first-color);
   outline: none;
   border-radius: 5px;
 }
 
-.skills-body .left-side,
-.skills-body .right-side {
+.skills-body .content {
   position: relative;
   width: 100%;
   flex-grow: 1;
@@ -119,39 +115,51 @@
   overflow-y: auto;
 }
 
-.left-side .inner-side,
-.right-side .inner-side {
+.content .inner-side {
   margin: 15px 0 35px 0;
   width: 100%;
   text-align: center;
 }
 
-.left-side .inner-h3,
-.right-side .inner-h3 {
+.content .inner-h3 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 50px;
   background-color: #121212;
   text-transform: uppercase;
   padding: 15px;
   text-align: center;
-  margin-bottom: 30px;
   letter-spacing: 2px;
   color: var(--main-color);
 }
 
-.left-side .inner-side .text,
-.right-side .inner-side .text {
+.content .inner-side .text{
   font-family: "Lato", sans-serif;
   line-height: 1.4em;
+  width: 80%;
+  padding: 10px 0;
+  margin: auto;
+  text-align: left;
 }
 
-.left-side .inner-side .h4-title,
-.right-side .inner-side .h4-title {
+.content .inner-side .h4-title {
   font-family: "Lato", sans-serif;
   font-size: 1.4em;
+  text-transform: uppercase;
   width: 80%;
   margin: 0 auto 10px auto;
   padding-bottom: 10px;
   color: var(--main-color);
   border-bottom: 1px solid var(--first-color);
+}
+
+.content .inner-side .text .inner-text-span::before{
+  content: '\2022';
+  color: var(--first-color);
+  margin-right: 10px;
+  font-size: 1.4em;
 }
 
 @media (min-width: 1025px) {
@@ -163,8 +171,7 @@
     flex-direction: row;
   }
 
-  .skills-body .left-side,
-  .skills-body .right-side {
+  .skills-body .content {
     margin: 10px;
   }
 }

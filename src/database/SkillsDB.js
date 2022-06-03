@@ -102,26 +102,11 @@ export const SkillsDb = [
           },
 
           {
-            title: "Tabele",
-            lessons: [
-              {
-                text: "Tworzenie tabeli",
-                teached: false,
-              },
-
-              {
-                text: "Lączenie, rozciąganie komórek",
-                teached: false,
-              },
-            ],
-          },
-
-          {
             title: "HTML 5",
             lessons: [
               {
                 text: "Nowe tagi, article, aside, section, nav",
-                teached: false,
+                teached: true,
               },
             ],
           },
@@ -140,11 +125,6 @@ export const SkillsDb = [
           {
             title: "Fundamenty cz. 1",
             lessons: [
-              {
-                text: "Kaskadowość",
-                teached: false,
-              },
-
               {
                 text: "Selektory, pseudoelementy i pseudoklasy",
                 teached: true,
@@ -241,26 +221,6 @@ export const SkillsDb = [
               },
 
               {
-                text: "Grid - kluczowe właściwości, teoria",
-                teached: false,
-              },
-
-              {
-                text: "Stworzenie projektu w Netbeans",
-                teached: false,
-              },
-
-              {
-                text: "Vendor prefixy",
-                teached: false,
-              },
-
-              {
-                text: "Selektory i właściwości pod IE",
-                teached: false,
-              },
-
-              {
                 text: "Selektory (~, >, +)",
                 teached: true,
               },
@@ -286,28 +246,8 @@ export const SkillsDb = [
               },
 
               {
-                text: "Gradienty",
-                teached: false,
-              },
-
-              {
-                text: "Transformacje 2D",
-                teached: false,
-              },
-
-              {
-                text: "Transformacje 3D",
-                teached: false,
-              },
-
-              {
                 text: "Responsive Web Design",
                 teached: true,
-              },
-
-              {
-                text: "Drukowanie strony",
-                teached: false,
               },
             ],
           },
@@ -348,50 +288,140 @@ export const SkillsDb = [
         framework: "Vanilla",
         sections: [
           {
-            title: "JS 1",
+            title: "Teoria JS",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Dodawanie pliku JS do HTML, instrukcje, komentarze",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Typy danych - proste i typ referencyjny (obiekt)",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Zmienne, const, let i var",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Operatory algorytmiczne i logiczne",
+                teached: true,
+              },
+
+              {
+                text: "Literały",
+                teached: true,
+              },
+
+              {
+                text: "Instrukcja warunkowa - If, operator trójargumentowy",
+                teached: true,
+              },
+
+              {
+                text: "Switch, operator warunkowy",
+                teached: true,
+              },
+
+              {
+                text: "Tablice",
+                teached: true,
+              },
+
+              {
+                text: "Metody wykonywane na tablicach",
+                teached: true,
+              },
+
+              {
+                text: "Pętle for, while, do while",
+                teached: true,
+              },
+
+              {
+                text: "Pętla of",
+                teached: true,
+              },
+
+              {
+                text: "Wywoływanie, zwracanie z funckji",
+                teached: true,
+              },
+
+              {
+                text: "Document Object Model (DOM) - pobieranie elementów, modyfikacja, zdarzenie i akcje, nasłuchiwanie",
                 teached: true,
               },
             ],
           },
 
           {
-            title: "JS 2",
+            title: "OOP - Object Oriented Programming",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Tworzenie obiektu, instancja",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Hermetyzacja, dziedziczenie, abstrakcja",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Klasy, dziedziczenie, extends i super",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "This",
+                teached: true,
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        framework: "JQuery",
+        sections: [
+          {
+            title: "JQuery",
+            lessons: [
+              {
+                text: "Teoria JQuery",
+                teached: true,
+              },
+
+              {
+                text: "Dodanie JQuery do projektu",
+                teached: true,
+              },
+
+              {
+                text: "Przypisanie obiektu JQuery do zmiennej",
+                teached: true,
+              },
+
+              {
+                text: "Pobieranie elementów w $",
+                teached: true,
+              },
+
+              {
+                text: "Dodawanie na początku elementu (Prepend)",
+                teached: true,
+              },
+
+              {
+                text: "Dodawanie do danego elementu na początku elementu (PrependTo)",
+                teached: true,
+              },
+
+              {
+                text: "Append i AppentTo - dodawanie na końcu",
                 teached: true,
               },
             ],
@@ -403,52 +433,68 @@ export const SkillsDb = [
         framework: "NodeJS",
         sections: [
           {
-            title: "Node 1",
+            title: "Wprowadzenie do NodeJS",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Instalacja Node",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "CLI",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Webserwer",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "REPL w Node",
+                teached: true,
+              },
+
+              {
+                text: "Callback",
+                teached: true,
+              },
+
+              {
+                text: "Format JSON",
+                teached: true,
+              },
+
+              {
+                text: "Require",
                 teached: true,
               },
             ],
           },
 
           {
-            title: "Node 2",
+            title: "Web serwer",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Serwer HTTP (Web serwer)",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Tworzenie serwera HTTP",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Żądanie do serwera HTTP",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Serwer HTTP - asychroniczność i synchroniczność",
                 teached: true,
               },
+
             ],
           },
         ],
@@ -458,50 +504,55 @@ export const SkillsDb = [
         framework: "Express",
         sections: [
           {
-            title: "Express 1",
+            title: "Framework Express",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Podstawy Express i pierwszy kod aplikacji",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Obiekt request, właściwości i metody",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
-                teached: true,
-              },
-            ],
-          },
-
-          {
-            title: "Express 2",
-            lessons: [
-              {
-                text: "Lesson1",
+                text: "Parametry adresu URL",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Odbieranie parametrów przez backend (req.params)",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Req.get i Referer",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Routing i obiekt params",
+                teached: true,
+              },
+
+              {
+                text: "Obiekt Response",
+                teached: true,
+              },
+
+              {
+                text: "Przesyłanie plików",
+                teached: true,
+              },
+
+              {
+                text: "Praca z nagłówkami",
+                teached: true,
+              },
+
+              {
+                text: "Middleware i przykłady",
                 teached: true,
               },
             ],
@@ -513,107 +564,185 @@ export const SkillsDb = [
         framework: "React",
         sections: [
           {
-            title: "React 1",
+            title: "Powtórka z JS",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Funkcja strzałkowa, metody join, concat, map, forEach, filter, findIndex, find",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Obiekty, klasy, instancje, dziedziczenie",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
+                text: "Mechanizm this",
                 teached: true,
               },
             ],
           },
 
           {
-            title: "React 2",
+            title: "Teoria React",
             lessons: [
               {
-                text: "Lesson1",
+                text: "JSX",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Komponenty",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
-                teached: true,
-              },
-            ],
-          },
-        ],
-      },
-
-      {
-        framework: "Angular",
-        sections: [
-          {
-            title: "Angular 1",
-            lessons: [
-              {
-                text: "Lesson1",
+                text: "State",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Props",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
+                text: "Przepływ danych, eventy",
                 teached: true,
               },
+              
             ],
           },
 
           {
-            title: "Angular 2",
+            title: "Zaawansowane zagadnienia",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Destrukturyzacja",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Praca z formularzami",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Metoda setState",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Cykl życia komponentu",
                 teached: true,
               },
+
+              {
+                text: "ComponentDidUpdate, ComponentDidMount, componentWillUnmount",
+                teached: true,
+              },
+
+              {
+                text: "Create React App - instalacja",
+                teached: true,
+              },
+
+              {
+                text: "Moduły",
+                teached: true,
+              },
+
+              {
+                text: "JSON i metoda fetch",
+                teached: true,
+              },
+
+              {
+                text: "Obiekt XMLHttpRequest",
+                teached: true,
+              },
+
+              {
+                text: "AJAX i JSON, techniki",
+                teached: true,
+              },
+
+              {
+                text: "API - teoria",
+                teached: true,
+              },
+
+              {
+                text: "React Router > v.6",
+                teached: true,
+              },
+              
+            ],
+          },
+
+          {
+            title: "Hooki",
+            lessons: [
+              {
+                text: "Komponenty funkcyjne",
+                teached: true,
+              },
+
+              {
+                text: "useState",
+                teached: true,
+              },
+
+              {
+                text: "useEffect",
+                teached: true,
+              },
+
+              {
+                text: "React context",
+                teached: true,
+              },
+
+              {
+                text: "createRef",
+                teached: true,
+              },
+
+              {
+                text: "useReducer",
+                teached: true,
+              },
+
+              {
+                text: "useMemo",
+                teached: true,
+              },
+
+              {
+                text: "useCallback",
+                teached: true,
+              },
+
+              {
+                text: "useLayoutEffect",
+                teached: true,
+              },
+
+              {
+                text: "useHistory",
+                teached: true,
+              },
+
+              {
+                text: "useLocation",
+                teached: true,
+              },
+
+              {
+                text: "useParams",
+                teached: true,
+              },
+            
             ],
           },
         ],
@@ -629,50 +758,85 @@ export const SkillsDb = [
         framework: "MySQL",
         sections: [
           {
-            title: "MySQL 1",
+            title: "CRUD",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Typy danych",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Definiowanie tabel i dodawanie wartości",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Wyświetlanie danych, ograniczanie",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Aktualizacja i usuwanie danych",
                 teached: true,
               },
             ],
           },
 
           {
-            title: "MySQL 2",
+            title: "Logika",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Operatory logiczne",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Transformacja i zawieranie się",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Warunki",
+                teached: true,
+              },
+            ],
+          },
+
+          {
+            title: "Relacje",
+            lessons: [
+              {
+                text: "Tabele relacyjne",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Referencja do innych tabel",
+                teached: true,
+              },
+
+              {
+                text: "Zapytanie do wielu tabel jednocześnie",
+                teached: true,
+              },
+
+              {
+                text: "Rodzaje łączeń tabel",
+                teached: true,
+              },
+
+              {
+                text: "Usuwanie wpisów z tabel z referencją",
+                teached: true,
+              },
+
+              {
+                text: "Łączenie dwóch tabel (Join)",
+                teached: true,
+              },
+
+              {
+                text: "Utworzenie połączenia w NodeJS",
                 teached: true,
               },
             ],
@@ -684,50 +848,35 @@ export const SkillsDb = [
         framework: "MongoDB",
         sections: [
           {
-            title: "Mongo 1",
+            title: "Wprowadzenie do bazy danych",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Instalancja MongoDB",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Podstawowe operacje na bazie MongoDB w Shell - dodawanie, odpytywanie",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
-                teached: true,
-              },
-            ],
-          },
-
-          {
-            title: "Mongo 2",
-            lessons: [
-              {
-                text: "Lesson1",
+                text: "Spójniki",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Aktualizacja danych i usuwanie elementów",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Compass Community",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Użycie MongoDB w Node.js",
                 teached: true,
               },
             ],
@@ -745,50 +894,176 @@ export const SkillsDb = [
         framework: "Vanilla",
         sections: [
           {
-            title: "PHP 1",
+            title: "Podstawy",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Zagnieżdżanie PHP w HTML",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Komentarze",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Zmienna, rzutowanie typów, var_dump",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Łączenie ciągów tekstowych",
+                teached: true,
+              },
+
+              {
+                text: "Tablice, tablice asocjacyjne",
+                teached: true,
+              },
+
+              {
+                text: "If, elseif, else",
+                teached: true,
+              },
+
+              {
+                text: "Operator trójargumentowy",
+                teached: true,
+              },
+
+              {
+                text: "Switch",
+                teached: true,
+              },
+
+              {
+                text: "For, while, do while, foreach, break i continue",
                 teached: true,
               },
             ],
           },
 
           {
-            title: "PHP 2",
+            title: "Funkcje",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Podstawowe informacje o funkcji",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Zasięg zmiennych",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Funkcje wbudowane",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Funkcje Anonimowe",
+                teached: true,
+              },
+
+            ],
+          },
+
+          {
+            title: "Zmienne predefiniowane",
+            lessons: [
+              {
+                text: "$_GET",
+                teached: true,
+              },
+
+              {
+                text: "$_POST",
+                teached: true,
+              },
+
+              {
+                text: "$_SESSION",
+                teached: true,
+              },
+
+              {
+                text: "$_SERVER",
+                teached: true,
+              },
+
+              {
+                text: "$_COOKIE",
+                teached: true,
+              },
+            ],
+          },
+
+          {
+            title: "OOP",
+            lessons: [
+              {
+                text: "Klasa, obiekt i pola klasy",
+                teached: true,
+              },
+
+              {
+                text: "$this->",
+                teached: true,
+              },
+
+              {
+                text: "Konstruktor",
+                teached: true,
+              },
+
+              {
+                text: "Enkapsulacja, Getter i Setter",
+                teached: true,
+              },
+
+              {
+                text: "Metody statyczne",
+                teached: true,
+              },
+
+              {
+                text: "Dziedziczenie",
+                teached: true,
+              },
+
+              {
+                text: "Interfejsy a Klasy Abstrakcyjne",
+                teached: true,
+              },
+            ],
+          },
+
+          {
+            title: "PDO - MySQL",
+            lessons: [
+              {
+                text: "Dodawanie nowych rekordów",
+                teached: true,
+              },
+
+              {
+                text: "Różnica pomiędzy bindParam() a bindValue()",
+                teached: true,
+              },
+
+              {
+                text: "Wyświetlanie rekordów",
+                teached: true,
+              },
+
+              {
+                text: "Aktualizacja rekordów",
+                teached: true,
+              },
+
+              {
+                text: "Usuwanie rekordów",
                 teached: true,
               },
             ],
@@ -800,50 +1075,85 @@ export const SkillsDb = [
         framework: "Laravel",
         sections: [
           {
-            title: "Laravel 1",
+            title: "Laravel",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Struktura katalogów",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Logowanie, rejestracja, zapomnianie hasła",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
+                text: "Routing",
                 teached: true,
               },
-            ],
-          },
-
-          {
-            title: "Laravel 2",
-            lessons: [
+              
               {
-                text: "Lesson1",
+                text: "Controller",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Request",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "View, Blade",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Lokalizacja",
+                teached: true,
+              },
+
+              {
+                text: "Migracje",
+                teached: true,
+              },
+
+              {
+                text: "Tworzenie modeli",
+                teached: true,
+              },
+
+              {
+                text: "Factory, Seeder",
+                teached: true,
+              },
+
+              {
+                text: "Simple CRUD",
+                teached: true,
+              },
+
+              {
+                text: "Relacje",
+                teached: true,
+              },
+
+              {
+                text: "Sesja",
+                teached: true,
+              },
+
+              {
+                text: "Middleware",
+                teached: true,
+              },
+
+              {
+                text: "Tworzenie własnego API",
+                teached: true,
+              },
+
+              {
+                text: "Wykorzystywanie API",
                 teached: true,
               },
             ],
@@ -858,108 +1168,68 @@ export const SkillsDb = [
 
     frameworks: [
       {
-        framework: "Vanilla",
-        sections: [
-          {
-            title: "Java 1",
-            lessons: [
-              {
-                text: "Lesson1",
-                teached: true,
-              },
-
-              {
-                text: "Lesson2",
-                teached: true,
-              },
-
-              {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
-                teached: true,
-              },
-            ],
-          },
-
-          {
-            title: "Java 2",
-            lessons: [
-              {
-                text: "Lesson1",
-                teached: true,
-              },
-
-              {
-                text: "Lesson2",
-                teached: true,
-              },
-
-              {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
-                teached: true,
-              },
-            ],
-          },
-        ],
-      },
-
-      {
         framework: "JavaFX",
         sections: [
           {
-            title: "JavaFX 1",
+            title: "JavaFX",
             lessons: [
               {
-                text: "Lesson1",
+                text: "Scene Builder",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Pierwszy projekt",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
-              },
-
-              {
-                text: "Lesson4",
-                teached: true,
-              },
-            ],
-          },
-
-          {
-            title: "JavaFX 2",
-            lessons: [
-              {
-                text: "Lesson1",
+                text: "Layouty",
                 teached: true,
               },
 
               {
-                text: "Lesson2",
+                text: "Przegląd podstawowych kontrolek",
                 teached: true,
               },
 
               {
-                text: "Lesson3",
-                teached: false,
+                text: "Kontrolery, fx:id i adnotacja @FXML",
+                teached: true,
               },
 
               {
-                text: "Lesson4",
+                text: "Obsługa zdarzeń (EventFilter / EventHandler)",
+                teached: true,
+              },
+
+              {
+                text: "Rodzaje zdarzeń myszy i klawiatury",
+                teached: true,
+              },
+
+              {
+                text: "Składanie widoku z kilku modułów",
+                teached: true,
+              },
+
+              {
+                text: "Komunikacja pomiędzy kilkoma kontrolerami",
+                teached: true,
+              },
+
+              {
+                text: "Propertites i data binding",
+                teached: true,
+              },
+
+              {
+                text: "Arkusze stylów CSS",
+                teached: true,
+              },
+
+              {
+                text: "Obsługa mediów",
                 teached: true,
               },
             ],
