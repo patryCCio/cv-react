@@ -1,54 +1,66 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { PageList } from "../pages/PageList";
 import { NavLink } from "react-router-dom";
 import "../styles/layouts/Navbar.css";
 
 const Navbar = () => {
-  let size = 0;
-  let actualStatus = "";
+  let actualStatus = '';
+  let isChange = true;
 
   function checkActualStatus() {
-    if (size > 1024) {
-      actualStatus = "window";
+    if (window.innerWidth > 1024) {
+      actualStatus = 'window';
+      isChange = true;
     } else {
-      actualStatus = "mobile";
+      actualStatus = 'mobile'
+      isChange = true;
     }
   }
 
-  function checkSize() {
-    size = window.innerWidth;
+  function resetClass(navbar, burger) {
+    navbar.classList.remove('active');
+    burger.classList.remove('active');
   }
 
-  function resetClass() {
-    const navbar = document.querySelector(".nav-ul");
-    const burger = document.querySelector(".burger-wrapper");
+  function addClass(navbar, burger) {
 
-    if (navbar.classList.contains("active")) navbar.classList.remove("active");
-    if (navbar.classList.contains("window")) navbar.classList.remove("window");
-    if (burger.classList.contains("active")) burger.classList.remove("active");
-  }
-
-  function addClass() {
-    const navbar = document.querySelector(".nav-ul");
     if (actualStatus === "window") {
-      navbar.dataset.state = "window";
-    } else navbar.dataset.state = "mobile";
+      navbar.dataset.status = "window";
+      burger.dataset.status = "window";
+    } else {
+      navbar.dataset.status = "mobile";
+      burger.dataset.status = "mobile";
+    }
   }
 
   function doFunctions() {
-    checkSize();
+    const burger = document.querySelector(".burger-wrapper");
+    const navbar = document.querySelector(".navbar-container");
     checkActualStatus();
-    resetClass();
-    addClass();
+    if (isChange === true) {
+      resetClass(navbar, burger);
+      addClass(navbar, burger);
+      isChange = false;
+    }
   }
 
   useEffect(() => {
     const burger = document.querySelector(".burger-wrapper");
-    const navbar = document.querySelector(".navbar");
+    const navbar = document.querySelector(".navbar-container");
+    const liEl = document.querySelectorAll(".nav-ul .nav-a");
 
     burger.addEventListener("click", () => {
       burger.classList.toggle("active");
       navbar.classList.toggle("active");
+    });
+
+    liEl.forEach((li) => {
+      li.addEventListener("click", () => {
+        if (burger.classList.contains("active"))
+          burger.classList.remove("active");
+        if (navbar.classList.contains("active"))
+          navbar.classList.remove("active");
+      });
     });
 
     window.addEventListener("resize", doFunctions, false);

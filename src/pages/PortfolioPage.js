@@ -34,7 +34,7 @@ const PortfolioPage = () => {
     );
     const portfolioLanguage = document.querySelector(".portfolio-language");
     const portfolioBody = document.querySelector(".portfolio-body");
-    const portfolioA = document.querySelector(".portfolio-look");
+    const portfolioA = document.querySelector(".portfolio-bottom-button");
 
     // DB
     const types = ["teach", "projects", "clients"];
@@ -60,7 +60,7 @@ const PortfolioPage = () => {
     let limitForLanguage = 0;
     let actualLanguageNumber = 0;
 
-    let urlProject = '/cv-react/myprojects/';
+    let urlProject = "/cv-react/myprojects/";
 
     function checkSizeProgressBar() {
       sizeProgressBar = progressBar.offsetWidth;
@@ -106,13 +106,21 @@ const PortfolioPage = () => {
           teach[languageNumber][1][actualLanguageNumber].title;
         portfolioDescription.textContent =
           teach[languageNumber][1][actualLanguageNumber].message;
-        portfolioA.href = `${urlProject+actualType}/kat${actualNumber}/index.html`;
+        portfolioA.href = `${urlProject + actualType}/kat${
+          actualNumber - 1
+        }/index.html`;
       } else if (actualType === "projects") {
         portfolioTitle.innerHTML = projects[actualNumber - 1].title;
         portfolioDescription.innerHTML = projects[actualNumber - 1].message;
+        portfolioA.href = `${urlProject + actualType}/kat${
+          actualNumber - 1
+        }/index.html`;
       } else if (actualType === "clients") {
         portfolioTitle.innerHTML = clients[actualNumber - 1].title;
         portfolioDescription.innerHTML = clients[actualNumber - 1].message;
+        portfolioA.href = `${urlProject + actualType}/kat${
+          actualNumber - 1
+        }/index.html`;
       }
     }
 
@@ -254,7 +262,7 @@ const PortfolioPage = () => {
 
     window.addEventListener("resize", init);
     init();
-  }, portfolio);
+  }, [portfolio]);
 
   return (
     <div className="portfolio">
@@ -314,17 +322,13 @@ const PortfolioPage = () => {
           <p className="portfolio-description">?</p>
         </div>
         <div className="portfolio-bottom">
-          <form method="get">
-            <button className="portfolio-bottom-button" type="submit">
-              <a
-                href="myprojects/teach/kat0/index.html"
-                target="_blank"
-                className="portfolio-look"
-              >
-                Zobacz
-              </a>
-            </button>
-          </form>
+          <a
+            href="myprojects/teach/kat0/index.html"
+            target="_blank"
+            className="portfolio-bottom-button"
+          >
+            Zobacz
+          </a>
           <p className="portfolio-size">
             <span className="portfolio-actual"></span>
             <span

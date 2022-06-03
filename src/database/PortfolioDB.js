@@ -283,6 +283,11 @@ export const PortfolioDB = [
         title: "CVWEB",
         message: "Strona prezentacyjna!",
       },
+
+      {
+        title: "Poprzednie CV",
+        message: "Moje poprzednie CV. Z uwagi na dużą ilość mb, niektóre funkcje są niedostępne!",
+      },
     ],
 
     clients: [

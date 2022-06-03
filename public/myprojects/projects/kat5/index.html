@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans:wght@300;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../AnimationPS/css/animationps.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- green, lightgray, blue, info, warning, alert, rose  -->
+    <nav class="navbar" data-navbarps="blue">
+        <ul>
+            <li class="ul-li" data-hrefps="home">Home</li>
+            <li class="ul-li" data-hrefps="aboutme">O mnie</li>
+            <li class="ul-li" data-hrefps="portfolio">Portfolio</li>
+            <li class="ul-li" data-hrefps="skills">Umiejętności</li>
+            <li class="ul-li" data-hrefps="contact">Kontakt</li>
+        </ul>
+    </nav>
+
+    <div class="burger" data-burgerps="blue"></div>
+
+    <div class="wrapper">
+        <section class="home" data-hrefposps="home">
+            <div class="shadow"></div>
+            <section class="home-box">
+                <h1>Witaj!</h1>
+                <h2>Mam na imię Patryk!</h2>
+                <button class="button-home" data-hrefps="aboutme">poznaj mnie!</button>
+            </section>
+        </section>
+
+        <section class="aboutme" data-hrefposps="aboutme">
+            <div class="aboutme-content">
+                <h1>O mnie</h1>
+                <div class="line"></div>
+                <p>Moje zainteresowanie w zakresie programowania zapoczątkowało w okresie technikum. Podjąłem wówczas
+                    kroki w tym kierunku i jako absolwent technikum rozpocząłem edukację na studiach informatycznych.
+                    Obecnie jestem studentem II roku i chciałbym prócz studiów pogłębiać swoją wiedzę w tym kierunku
+                    poprzez nabywanie doświadczenia (front-end). Jestem osobą dokładną, dopracowującą każdy szczegół.
+                    Lubię trudne wyzwania, gdyż to przy nich najwięcej się uczymy.
+                    Prócz programowania interesuję się grafiką komputerową, malowaniem, muzyką i sportem.
+                </p>
+                <div class="under-text"></div>
+            </div>
+        </section>
+
+        <section class="portfolio" data-hrefposps="portfolio">
+            <div class="header-portfolio">
+                <h1>portfolio</h1>
+                <div class="line"></div>
+            </div>
+            <div class="content-portfolio">
+                <div class="project-wrapper">
+                    <div class="project-table">
+                        <div class="top-border"></div>
+                        <div class="project-content">
+                            <div class="project-type">
+                                <button id="teach-button" class="button-type active">Nauka</button>
+                                <button id="project-button" class="button-type">Projekty</button>
+                                <div class="project-language">
+                                    <button id="css-button" class="button-language active">CSS</button>
+                                    <button id="javascript-button" class="button-language">JavaScript</button>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+
+                            <h1>Projekty</h1>
+                            <p>Tutaj były wszystkie projekty, które są dostępne na stronie cv!</p>
+                            <a class="project-select" target="_Blank">Zobacz przykład!</a>
+                            <div class="progress-bar">
+                                <div class="progress-div"></div>
+                            </div>
+                            <div class="project-arrows">
+                                <div class="left-arrow">&lt;</div>
+                                <div class="how-projects"></div>
+                                <div class="right-arrow">&gt;</div>
+                            </div>
+                        </div>
+                        <div class="bottom-border"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" data-hrefposps="skills">
+            <div class="bg"></div>
+            <div class="skills-content">
+                <h1>Umiejętności</h1>
+                <div class="line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="package">
+                    <div class="round-package" data-key="1">
+                        <span class="round-package-span"></span>
+                        <div class="inner">
+                            <i class="fa-brands fa-html5"></i>
+                            <span class="content"></span>
+                        </div>
+                    </div>
+                    <h1>HTML 5</h1>
+                </div>
+                <div class="package">
+                    <div class="round-package" data-key="2">
+                        <span class="round-package-span"></span>
+                        <div class="inner">
+                            <i class="fa-brands fa-css3"></i>
+                            <span class="content"></span>
+                        </div>
+                    </div>
+                    <h1>CSS</h1>
+                </div>
+                <div class="package">
+                    <div class="round-package" data-key="3">
+                        <span class="round-package-span"></span>
+                        <div class="inner">
+                            <i class="fa-brands fa-js"></i>
+                            <span class="content"></span>
+                        </div>
+                    </div>
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="package">
+                    <div class="round-package" data-key="4">
+                        <span class="round-package-span"></span>
+                        <div class="inner">
+                            <i class="fa-brands fa-node"></i>
+                            <span class="content"></span>
+                        </div>
+                    </div>
+                    <h1>NodeJS</h1>
+                </div>
+                <div class="package">
+                    <div class="round-package" data-key="5">
+                        <span class="round-package-span"></span>
+                        <div class="inner">
+                            <i class="fa-brands fa-react"></i>
+                            <span class="content"></span>
+                        </div>
+                    </div>
+                    <h1>React</h1>
+                </div>
+                <div class="package">
+                    <div class="round-package" data-key="6">
+                        <span class="round-package-span"></span>
+                        <div class="inner">
+                            <i class="fa-brands fa-angular"></i>
+                            <span class="content"></span>
+                        </div>
+                    </div>
+                    <h1>Angular</h1>
+                </div>
+                <div class="package">
+                    <div class="round-package" data-key="7">
+                        <span class="round-package-span"></span>
+                        <div class="inner">
+                            <i class="fa-brands fa-java"></i>
+                            <span class="content"></span>
+                        </div>
+                    </div>
+                    <h1>Java</h1>
+                </div>
+
+
+            </div>
+            <div class="under-text"></div>
+        </section>
+
+
+        <section class="contact" data-hrefposps="contact">
+            <div class="shadow"></div>
+            <h1>Kontakt</h1>
+            <div class="line"></div>
+            <div class="contact-content-wrapper">
+                <div class="contact-content">
+                    <h1 class="contact-h1">
+                        Jesteś zainteresowany?
+                    </h1>
+                    <h2 class="contact-h2">
+                        Skontaktuj się ze mną!
+                    </h2>
+                    <div class="contact-other-container">
+                        <div class="contact-other">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <p>+48 502 495 064</p>
+                        </div>
+                        <div class="contact-other">
+                            <i class="fa-solid fa-at"></i>
+                            <p>patryk.szczerbinski@o2.pl</p>
+                        </div>
+
+                    </div>
+
+
+                    <h1 class="contact-h1">
+                        Chcesz się skontaktować inaczej?
+                    </h1>
+                    <h2 class="contact-h2">
+                        Odwiedź moje media społecznościowe!
+                    </h2>
+                    <div class="contact-social-container">
+                        <div class="contact-social">
+                            <a href="https://www.facebook.com/profile.php?id=100009011498937" target="_Blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/patryccio/" target="_Blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d27bd9035e.js" crossorigin="anonymous"></script>
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

@@ -144,17 +144,19 @@
   text-align: center;
   border-bottom: 2px solid var(--main-color);
   color: var(--main-color);
+  font-size: 1.4em;
 }
 
 .portfolio-wrapper .portfolio-body p.portfolio-description {
   color: var(--second-color);
   font-family: "Lato", sans-serif;
-  line-height: 1.6em;
+  line-height: 1.2em;
   text-align: center;
   flex-grow: 1;
   padding: 0 10px;
   max-height: 181px;
   overflow-y: auto;
+  font-size: 1.4em;
 }
 
 p.portfolio-description::-webkit-scrollbar {
@@ -183,7 +185,8 @@ p.portfolio-description::-webkit-scrollbar-thumb {
   font-size: 1.2em;
 }
 
-.portfolio-wrapper .portfolio-bottom button.portfolio-bottom-button {
+.portfolio-wrapper .portfolio-bottom .portfolio-bottom-button {
+  display: flex;
   color: var(--second-color);
   background-color: transparent;
   transition: 0.3s;
@@ -192,9 +195,12 @@ p.portfolio-description::-webkit-scrollbar-thumb {
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+  font-size: 0.7em;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
 }
 
-.portfolio-wrapper .portfolio-bottom button.portfolio-bottom-button:hover {
+.portfolio-wrapper .portfolio-bottom .portfolio-bottom-button:hover {
   background-color: var(--main-color);
 }
 
@@ -207,16 +213,6 @@ p.portfolio-description::-webkit-scrollbar-thumb {
   font-size: 25px;
   color: var(--main-color);
   align-items: center;
-}
-
-.portfolio-bottom-button .portfolio-look{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--second-color);
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
 }
 
 .portfolio-wrapper .portfolio-footer i {
@@ -255,9 +251,17 @@ p.portfolio-description::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .portfolio {
     width: 100%;
     min-height: 30vh;
+  }
+
+  .portfolio-wrapper .portfolio-body h3.portfolio-title {
+    font-size: 2em;
+  }
+  
+  .portfolio-wrapper .portfolio-body p.portfolio-description {
+    font-size: 1.4em;
   }
 }
