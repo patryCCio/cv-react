@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cv-react/myprojects/teach/kat54/precache-manifest.922b080481e4c88faacf4551d4431f22.js"
+  "/cv-react/myprojects/teach/react/kat15/index.html/precache-manifest.c6f8286887b96c59080f1b413e614f2d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cv-react/myprojects/teach/kat54/index.html", {
+workbox.routing.registerNavigationRoute("/cv-react/myprojects/teach/react/kat15/index.html/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
