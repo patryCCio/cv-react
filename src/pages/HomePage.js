@@ -5,7 +5,7 @@ import "../styles/pages/HomePage.css";
 const HomePage = () => {
   return (
     <div className="home">
-      <Section value="Home" font={<i className="fa-solid fa-house"></i>}/>
+      <Section value="Biblioteki" font={<i className="fa-solid fa-book"></i>}/>
     </div>
   );
 };

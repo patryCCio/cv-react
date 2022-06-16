@@ -48,7 +48,9 @@
 .card-wrapper .circle-wrapper .circle-outer .circle-inner .circle-image {
   width: 90%;
   height: 90%;
-  background-color: var(--fourth-color);
+  background-image: url('../../images/avatar.jpg');
+  background-size: cover;
+  opacity: 0.9;
   border-radius: 50%;
 }
 

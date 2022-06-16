@@ -28,7 +28,7 @@ const SkillsPage = () => {
 
     const teach = document.createElement("h3");
     teach.classList.add("inner-h3");
-    teach.textContent = "Nauczone";
+    teach.textContent = "Zapoznane";
 
     content.appendChild(teach);
 

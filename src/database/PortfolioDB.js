@@ -223,33 +223,93 @@ export const PortfolioDB = [
         "react",
         [
           {
-            title: "Title 1",
-            message: "React1",
+            title: "Dodaj cyfrę",
+            message: "Komponent funkcyjny, dodawanie cyfry za pomocą przycisku",
           },
 
           {
-            title: "Title 2",
-            message: "React2",
+            title: "Input",
+            message: "Wpisz dowolną wartość",
           },
 
           {
-            title: "Title 3",
-            message: "React3",
+            title: "Wiadomość",
+            message: "Pokaż, ukryj wiadomość",
+          },
+
+          {
+            title: "Wynik",
+            message: "Zlicz ilość kliknięć oraz wynik",
+          },
+
+          {
+            title: "Horror roku",
+            message: "Sprawdź czy możesz zakupić bilet",
+          },
+
+          {
+            title: "Produkt",
+            message: "Kup produkt, tylko 7 na stanie magazynowym",
+          },
+
+          {
+            title: "Zamów",
+            message: "Złóż zamówienie!",
+          },
+
+          {
+            title: "Waluty",
+            message: "Sprawdź cennik paliwa, pomarańczy oraz prądu w: euro, złotówkach, dolarach i funtach",
+          },
+
+          {
+            title: "Wróżba",
+            message: "Losuj wróżbę oraz dodaj ją sam",
+          },
+
+          {
+            title: "Lista gości",
+            message: "Dodaj gości do swojej listy",
+          },
+
+          {
+            title: "Create React App",
+            message: "Pierwszy projekt napisany za pomocą create react app",
+          },
+
+          {
+            title: "Refresh",
+            message: "Odśwież wynik co konkretną ilość sekund",
+          },
+
+          {
+            title: "API",
+            message: "Pobieranie danych z danej strony",
+          },
+
+          {
+            title: "Formularz",
+            message: "Walidacja formularza, zabezpieczenia",
+          },
+
+          {
+            title: "TodoApp",
+            message: "Prosty projekt todo listy",
+          },
+
+          {
+            title: "Wstępny projekt sklepu",
+            message: "React Router 6, useEffect",
           },
         ],
       ],
 
       [
-        "nodejs",
+        "express",
         [
           {
             title: "Title 1",
             message: "NodeJS1",
-          },
-
-          {
-            title: "Title 2",
-            message: "NodeJS2",
           },
         ],
       ],

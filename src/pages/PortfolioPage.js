@@ -43,6 +43,8 @@ const PortfolioPage = () => {
     const clients = portfolio[0].clients;
     let actualType = types[0];
 
+    
+
     // buttons
     const buttonsType = document.querySelectorAll(
       ".portfolio-type .button-type"
@@ -50,6 +52,8 @@ const PortfolioPage = () => {
     const buttonsLanguage = document.querySelectorAll(
       ".portfolio-language .button-language"
     );
+
+    const allLanguages = teach.map(course => course[0]);
 
     // sizes
     let sizeArray;
@@ -106,8 +110,8 @@ const PortfolioPage = () => {
           teach[languageNumber][1][actualLanguageNumber].title;
         portfolioDescription.textContent =
           teach[languageNumber][1][actualLanguageNumber].message;
-        portfolioA.href = `${urlProject + actualType}/kat${
-          actualNumber - 1
+        portfolioA.href = `${urlProject + actualType + '/' + allLanguages[languageNumber]}/kat${
+          actualLanguageNumber
         }/index.html`;
       } else if (actualType === "projects") {
         portfolioTitle.innerHTML = projects[actualNumber - 1].title;
@@ -182,7 +186,7 @@ const PortfolioPage = () => {
         portfolioAnimation2.forEach((animation) => {
           animation.classList.remove("active");
         });
-      }, 2000);
+      }, 1500);
       if (actualType === "teach") {
         repairArray("left");
       }
@@ -301,7 +305,7 @@ const PortfolioPage = () => {
           <button className="button-language">CSS</button>
           <button className="button-language">JS</button>
           <button className="button-language">React</button>
-          <button className="button-language">NodeJS</button>
+          <button className="button-language">Express</button>
         </div>
         <div className="portfolio-header">
           <div className="portfolio-type">

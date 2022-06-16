@@ -14,13 +14,7 @@ const AboutPage = () => {
         <div className="about-content-top">
           <p>
             <span className="about-span">Nazywam się Patryk Szczerbiński!</span>{" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            efficitur vestibulum mi, vitae viverra massa ornare non. Etiam
-            vestibulum finibus arcu. Vivamus et maximus ante. Aenean dignissim
-            auctor volutpat. Vivamus vitae ligula id augue rhoncus aliquet.
-            Donec facilisis purus a diam dapibus dapibus. In hac habitasse
-            platea dictumst. Nunc tempor metus ac ipsum aliquet, in facilisis
-            nibh pellentesque.
+            Moje zainteresowanie w zakresie programowania zapoczątkowało w okresie technikum. Podjąłem wówczas kroki w tym kierunku i jako absolwent technikum rozpocząłem edukację na studiach informatycznych. Obecnie jestem studentem II roku i chciałbym prócz studiów pogłębiać swoją wiedzę w tym kierunku poprzez nabywanie doświadczenia (front-end). Jestem osobą dokładną, dopracowującą każdy szczegół. Lubię trudne wyzwania, gdyż to przy nich najwięcej się uczymy. Prócz programowania interesuję się grafiką komputerową, rysowaniem, muzyką i sportem.
           </p>
         </div>
         <div className="about-content-bottom">
@@ -57,11 +51,11 @@ const AboutPage = () => {
             <div className="about-hobby-box">
               <div className="about-hobby">
                 <i className="fa-solid fa-computer"></i>
-                <h5 className="hobby-h5">Programming</h5>
+                <h5 className="hobby-h5">Programowanie</h5>
               </div>
               <div className="about-hobby">
                 <i className="fa-solid fa-pencil"></i>
-                <h5 className="hobby-h5">Malowanie</h5>
+                <h5 className="hobby-h5">Rysowanie</h5>
               </div>
               <div className="about-hobby">
                 <i className="fa-solid fa-music"></i>
