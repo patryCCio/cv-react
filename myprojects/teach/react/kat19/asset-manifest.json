@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cv-react/myprojects/teach/react/kat19/static/css/main.8814d8df.css",
+    "main.js": "/cv-react/myprojects/teach/react/kat19/static/js/main.a8912aab.js",
+    "index.html": "/cv-react/myprojects/teach/react/kat19/index.html",
+    "main.8814d8df.css.map": "/cv-react/myprojects/teach/react/kat19/static/css/main.8814d8df.css.map",
+    "main.a8912aab.js.map": "/cv-react/myprojects/teach/react/kat19/static/js/main.a8912aab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8814d8df.css",
+    "static/js/main.a8912aab.js"
+  ]
+}
