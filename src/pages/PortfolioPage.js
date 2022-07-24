@@ -112,19 +112,19 @@ const PortfolioPage = () => {
           teach[languageNumber][1][actualLanguageNumber].message;
         portfolioA.href = `${urlProject + actualType + '/' + allLanguages[languageNumber]}/kat${
           actualLanguageNumber
-        }/index.html`;
+        }/`;
       } else if (actualType === "projects") {
         portfolioTitle.innerHTML = projects[actualNumber - 1].title;
         portfolioDescription.innerHTML = projects[actualNumber - 1].message;
         portfolioA.href = `${urlProject + actualType}/kat${
           actualNumber - 1
-        }/index.html`;
+        }/`;
       } else if (actualType === "clients") {
         portfolioTitle.innerHTML = clients[actualNumber - 1].title;
         portfolioDescription.innerHTML = clients[actualNumber - 1].message;
         portfolioA.href = `${urlProject + actualType}/kat${
           actualNumber - 1
-        }/index.html`;
+        }/`;
       }
     }
 
@@ -305,7 +305,6 @@ const PortfolioPage = () => {
           <button className="button-language">CSS</button>
           <button className="button-language">JS</button>
           <button className="button-language">React</button>
-          <button className="button-language">Express</button>
         </div>
         <div className="portfolio-header">
           <div className="portfolio-type">

@@ -5,130 +5,130 @@ export const PortfolioDB = [
         "css",
         [
           {
-            title: "Flexbox 1",
+            title: "CSS 1",
             message:
               "Pierwsza zabawa z flexboxem. Ułożenie danych divow z ustaloną konwencją.",
           },
 
           {
-            title: "Flexbox 2",
+            title: "CSS 2",
             message: "Utworzenie responsywnego layoutu za pomocą flexboxa.",
           },
 
           {
-            title: "Flexbox 3",
+            title: "CSS 3",
             message: "Stworzone za pośrednictwem flexboxa responsywne menu.",
           },
 
           {
-            title: "Flexbox 4",
+            title: "CSS 4",
             message:
               "Kalkulator bez funkcjonalności podstawowych, lecz zrobiony we flexboxie.",
           },
 
           {
-            title: "Flexbox 5",
+            title: "CSS 5",
             message:
               "Trudne zadanie z flexboxa. Ułożenie przycisków w równej linii.",
           },
 
           {
-            title: "Position 1",
+            title: "CSS 6",
             message:
               "Ćwiczenie polegające na ułożenie obrazu z kilka obrazków za pomocą 'position: absolute'.",
           },
 
           {
-            title: "Position 2",
+            title: "CSS 7",
             message: "Pozycjonowanie szachownicy.",
           },
 
           {
-            title: "Animation 1",
+            title: "CSS 8",
             message: "Budujemy własny dom!",
           },
 
           {
-            title: "Animation 2",
+            title: "CSS 9",
             message: "Zmiana kolorów za pomocą animacji.",
           },
 
           {
-            title: "Animation 3",
+            title: "CSS 10",
             message:
               "Zadanie polegające na uruchomieniu animacji za pomocą przycisku.",
           },
 
           {
-            title: "Animation 4",
+            title: "CSS 11",
             message: "Po najechaniu na zegar, zaczyna się poruszać.",
           },
 
           {
-            title: "Button 1",
+            title: "CSS 12",
             message:
               "Przykład przycisku. Można wykonać za pomocą span'a lub za pomocą after, before.",
           },
 
           {
-            title: "Button 2",
+            title: "CSS 13",
             message: "Przykład przycisku.",
           },
 
           {
-            title: "Button 3",
+            title: "CSS 14",
             message:
               "Przykład przycisków, które wchodzą w interakcję z tekstem.",
           },
 
           {
-            title: "Button 4",
+            title: "CSS 15",
             message: "Przykład przycisku.",
           },
 
           {
-            title: "Baner 1",
+            title: "CSS 16",
             message:
               'Przykładowy prosty baner wykonany poprzez "@keyframes" (animację).',
           },
 
           {
-            title: "Hamburger 1",
+            title: "CSS 17",
             message: "Pierwszy przykład animacji hamburgra!",
           },
 
           {
-            title: "Hamburger 2",
+            title: "CSS 18",
             message: "Drugi przykład animacji hamburgra!",
           },
 
           {
-            title: "Hamburger 3",
+            title: "CSS 19",
             message: "Trzeci przykład animacji hamburgra!",
           },
 
           {
-            title: "Hamburger 4",
+            title: "CSS 20",
             message: "Czwarty przykład animacji hamburgra!",
           },
 
           {
-            title: "Hamburger 5",
+            title: "CSS 21",
             message: "Piąty przykład animacji hamburgra!",
           },
 
           {
-            title: "JQuery 1",
+            title: "CSS 22",
             message: "Dodawanie kwadratów za pomocą JQuery.",
           },
 
           {
-            title: "Modal Popup",
+            title: "CSS 23",
             message: 'Prosty projekt "Modal Popup".',
           },
 
           {
-            title: "Skrolowane Menu",
+            title: "CSS 24",
             message: "Skrolowanie menu za pośrednictwem przycisków.",
           },
         ],
@@ -223,93 +223,106 @@ export const PortfolioDB = [
         "react",
         [
           {
-            title: "Dodaj cyfrę",
-            message: "Komponent funkcyjny, dodawanie cyfry za pomocą przycisku",
+            title: "React 1",
+            message: "Dodaj cyfrę! Komponent funkcyjny, dodawanie cyfry za pomocą przycisku",
           },
 
           {
-            title: "Input",
-            message: "Wpisz dowolną wartość",
+            title: "React 2",
+            message: "Obsługa inputu. Wpisz dowolną wartość",
           },
 
           {
-            title: "Wiadomość",
+            title: "React 3",
             message: "Pokaż, ukryj wiadomość",
           },
 
           {
-            title: "Wynik",
+            title: "React 4",
             message: "Zlicz ilość kliknięć oraz wynik",
           },
 
           {
-            title: "Horror roku",
-            message: "Sprawdź czy możesz zakupić bilet",
+            title: "React 5",
+            message: "Sprawdź czy możesz zakupić bilet na horror roku!",
           },
 
           {
-            title: "Produkt",
+            title: "React 6",
             message: "Kup produkt, tylko 7 na stanie magazynowym",
           },
 
           {
-            title: "Zamów",
+            title: "React 7",
             message: "Złóż zamówienie!",
           },
 
           {
-            title: "Waluty",
+            title: "React 8",
             message: "Sprawdź cennik paliwa, pomarańczy oraz prądu w: euro, złotówkach, dolarach i funtach",
           },
 
           {
-            title: "Wróżba",
+            title: "React 9",
             message: "Losuj wróżbę oraz dodaj ją sam",
           },
 
           {
-            title: "Lista gości",
+            title: "React 10",
             message: "Dodaj gości do swojej listy",
           },
 
           {
-            title: "Create React App",
-            message: "Pierwszy projekt napisany za pomocą create react app",
+            title: "React 11",
+            message: "Pierwszy projekt napisany przy pomocy create react app",
           },
 
           {
-            title: "Refresh",
+            title: "React 12",
             message: "Odśwież wynik co konkretną ilość sekund",
           },
 
           {
-            title: "API",
-            message: "Pobieranie danych z danej strony",
+            title: "React 13",
+            message: "Pobieranie danych z danej strony (API)",
           },
 
           {
-            title: "Formularz",
+            title: "React 14",
             message: "Walidacja formularza, zabezpieczenia",
           },
 
           {
-            title: "TodoApp",
+            title: "React 15",
             message: "Prosty projekt todo listy",
           },
 
           {
-            title: "Wstępny projekt sklepu",
-            message: "React Router 6, useEffect",
+            title: "React 16",
+            message: "Wstępny projekt sklepu, React Router 6, useEffect",
           },
-        ],
-      ],
 
-      [
-        "express",
-        [
           {
-            title: "Title 1",
-            message: "NodeJS1",
+            title: "React 17",
+            message: "Drugi projekt todo listy",
+          },
+
+          {
+            title: "React 18",
+            message: "Dowiedz się czegoś nowego o emoji",
+          },
+
+          {
+            title: "React 19",
+            message: "Ostylowany login login: user, hasło: user",
+          },
+          {
+            title: "React 20",
+            message: "Zobacz aktualny czas",
+          },
+          {
+            title: "React 21",
+            message: "Wyświetlanie kontaktów za pomocą przesyłu propsów oraz tablicy",
           },
         ],
       ],

@@ -34,7 +34,8 @@
 
 .portfolio-wrapper  .portfolio-language .button-language {
   height: 100%;
-  flex-basis: 50%;
+  min-width: 50%;
+  flex-grow: 1;
   background-color: var(--third-color);
   color: var(--second-color);
   transition: .3s;
@@ -54,10 +55,6 @@
   background-color: #61D8FB;
   color: black;
 }
-.portfolio-wrapper  .portfolio-language .button-language.active:nth-child(4) {
-  background-color: #3c873a;
-}
-
 .portfolio-wrapper  .portfolio-language .button-language:hover:nth-child(1) {
   background-color: #2965f1;
   color: black;
@@ -76,8 +73,7 @@
 
 .button-type:nth-child(1),
 .button-type:nth-child(2),
-.button-language:nth-child(1),
-.button-language:nth-child(3) {
+.button-language:nth-child(1) {
   border-right: 1px solid var(--first-color);
 }
 
