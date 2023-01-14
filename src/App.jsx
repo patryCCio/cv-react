@@ -20,7 +20,7 @@ const Layout = () => {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/cv-react">
       <div className="wrapper">
         <Routes>
           <Route path="/" element={<Layout />}>
