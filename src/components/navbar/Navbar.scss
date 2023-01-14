@@ -8,7 +8,7 @@
   background-color: var(--theme1);
   width: 60px;
   height: 60px;
-  z-index: 1001;
+  z-index: 99;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@
 
 nav {
   position: fixed;
-  z-index: 101;
+  z-index: 98;
   top: 0;
   left: 0;
   width: 100%;
@@ -141,7 +141,7 @@ nav.active {
 
 .color-switcher {
   position: fixed;
-  z-index: 99;
+  z-index: 97;
   display: flex;
   top: 100px;
   right: 0;
@@ -272,7 +272,7 @@ nav.active {
 
 .color-switcher.active {
   transform: translateX(0);
-  z-index: 102;
+  z-index: 99;
   .color-button {
     .icon {
       animation: rotateSettings 2s linear infinite;
