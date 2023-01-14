@@ -1,4 +1,4 @@
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -6,7 +6,6 @@ import "./styles/App.css";
 import About from "./pages/about/About";
 import Experience from "./pages/experience/Experience";
 import Portfolio from "./pages/portfolio/Portfolio";
-import Error from "./pages/error/Error";
 
 const Layout = () => {
   return (
@@ -27,7 +26,7 @@ const App = () => {
             <Route path="/" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="*" element={<Error />} />
+            <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>
       </div>
