@@ -1,0 +1,410 @@
+@import 'colors';
+
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-padding-top: 82px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg-color;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline{
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $main-color;
+}
+
+.shadow-bg{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav{
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 2;
+    transition: .4s;
+    .nav-link, .navbar-brand{
+        color: $white-color;
+    }
+
+    .nav-link:hover{
+        color: $main-color;
+    }
+
+    .navbar-brand{
+        font-weight: bold;
+    }
+
+    .active{
+        color: $main-color;
+    }
+
+    .fa-bars{
+        padding: 10px;
+        color: $white-color;
+    }
+}
+
+.text-blue{
+    color: $main-color;
+}
+
+header{
+    color: $white-color;
+
+    h1{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .hero-img{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-image: url('../img/header-mini.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 1;
+    }
+    .hero-shadow{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.65);
+        z-index: -1;
+    }
+    .hero-text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        z-index: 0;
+    }
+    .fa-chevron-down{
+        position: absolute;
+        bottom: 20px;
+        font-size: 30px;
+        left: 50%;
+        transform: scale(1);
+        color: $white-color;
+        animation: arrowdown 2s infinite;
+    }
+
+    .btn-outline-light{
+        text-transform: uppercase;
+    }
+}
+
+.aboutus{
+    .fa-mobile-screen-button, .fa-display, .fa-file-code, .fa-paw, .fa-burger, .fa-champagne-glasses{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .aboutus-card-title{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .aboutus-card-text{
+        font-size: 14px;
+    }
+
+    .aboutus-hover{
+        transition: .2s;
+    }
+
+    .aboutus-hover:hover{
+        color: $main-color;
+    }
+}
+
+.aboutus-hero{
+    position: relative;
+    background-image: url('../img/aboutus-hero-small.jpg');
+    background-position: center;
+    background-size: cover;
+    color: $light-gray;
+    z-index: -2;
+    .aboutus-shadow{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.65);
+        top: 0;
+        z-index: -1;
+    }
+
+    .aboutus-hero-item{
+        margin: 10px 0;
+        .aboutus-hero-title{
+            font-size: 24px;
+        }
+    }
+
+    .fa-steam, .fa-playstation, .fa-xbox{
+        margin-top: 20px;
+        font-size: 36px;
+    }
+    
+}
+
+.portfolio{
+    background-color: $bg-color;
+    .carousel-item{
+        position: relative;
+    }
+
+    .carousel-caption{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 40px 0;
+        background-color:rgba(0, 0, 0, 0.8);
+    }
+}
+
+.prices{
+    text-align: center;
+    .prices-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .prices-card{
+            min-width: 23%;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin: 30px 35px;
+            box-shadow: 0px 0px 8px -2px rgba(66, 68, 90, 1);
+            padding: 25px;
+            transform: scale(1);
+            transition: .3s;
+            .prices-caption-card{
+                border-bottom: 1px solid gray;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                text-transform: uppercase;
+                color: $main-color;
+            }
+            .price-offer{
+                font-weight: bold;
+                font-size: 22px;
+                margin-top: 35px;
+            }
+            .price-icon{
+                font-size: 23px;
+                padding: 0 5px;
+            }
+            .price-icon:first-of-type{
+                padding-left: 15px;
+            }
+        }
+        .prices-card:hover{
+            transform: scale(1.1);
+        }
+    }
+    .price-info{
+        margin-top: 60px;
+        font-size: 16px;
+    }
+    .text-muted{
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+}
+
+.team{
+    position: relative;
+    background-image: url('../img/team-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    h2{
+        color: $light-gray;
+    }
+    .team-shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.65);
+        z-index: -1;
+    }
+
+    .card{
+        transition: .3s;
+        img{
+            height: 300px;
+            object-fit: cover;
+        }
+        .team-icon {
+            padding: 10px;
+        }
+    }
+
+    .card:hover{
+        transform: scale(.96);
+    }
+
+    .card-title{
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .card-body{
+        height: 160px;
+    }
+}
+
+.achievements{
+    .achievement-icon{
+        padding: 10px;
+        font-size: 35px;
+        color: $main-color;
+    }
+    .achievement-number{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .achievement-text{
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+}
+
+.contact{
+    position: relative;
+    background-image: url('../img/contact-mini.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+    h2{
+        color: $light-gray;
+        font-weight: bold;
+    }
+
+    .underline{
+        background-color: $light-gray;
+    }
+
+    .contact-us{
+        display: flex;
+        align-items: center;
+        color: white;
+        .contact-item{
+            margin: 30px 0;
+            h3{
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .contact-shadow{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 9, 26, .85);
+        z-index: -5;
+    }
+
+    .social-media{
+        padding: 25px;
+        i{
+            margin: 0 30px;
+            font-size: 40px;
+        }
+    }
+}
+
+@keyframes arrowdown{
+    20%{
+        transform: scale(1.4);
+    }
+    40%{
+        transform: scale(1);
+    }
+}
+
+@media(min-width: 375px){
+    header{
+        h1{
+            font-size: 36px;
+        }
+
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        h1{
+            font-size: 42px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+    .contact{
+
+        background-image: url('../img/contact-big.jpg');
+    }
+}
+
+@media(min-width: 992px){
+    nav{
+        height: 82px;
+    }
+
+    .aboutus-hero{
+        background-image: url('../img/aboutus-hero-big.jpg');
+    }
+}
+
+@media(min-width: 1200px){
+    header{
+        .hero-img{
+            background-image: url('../img/header-big.jpg');
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cv-react/myprojects/teach/react/kat16/static/css/main.0c1dc8a7.css",
+    "main.js": "/cv-react/myprojects/teach/react/kat16/static/js/main.8a5768fb.js",
+    "index.html": "/cv-react/myprojects/teach/react/kat16/index.html",
+    "main.0c1dc8a7.css.map": "/cv-react/myprojects/teach/react/kat16/static/css/main.0c1dc8a7.css.map",
+    "main.8a5768fb.js.map": "/cv-react/myprojects/teach/react/kat16/static/js/main.8a5768fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c1dc8a7.css",
+    "static/js/main.8a5768fb.js"
+  ]
+}

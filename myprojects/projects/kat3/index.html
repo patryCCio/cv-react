@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library+ - wypożycz swoją książkę</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="burger-circle">
+        <div class="burger-wrapper">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <nav id="navbar" class="navbar">
+            <div class="logo">Library<span class='lplus'>+</span></div>
+            <div class="nav-content">
+                <ul class="nav-ul">
+                    <li data-href="home">Home</li>
+                    <li data-href="aboutus">O nas</li>
+                    <li data-href="prices">Cennik</li>
+                    <li data-href="repo">Repozytorium</li>
+                    <li data-href="contact">Kontakt</li>
+                </ul>
+                <button class="aboutus-button" data-href="aboutus">Poznaj nas</button>
+            </div>
+        </nav>
+    
+        <header class="header-home" id="home">
+            <div class="header-img">
+                <div class="header-text">
+                    <h1 class="header-h1">Witaj w Library<span class="lplus">+</span></h1>
+                    
+                    <h2 class="header-h2">Poznaj świetne audiobooki!</h2>
+                </div>
+                <div class="header-shadow"></div>
+            </div>   
+        </header>
+        <main>
+            <section class="aboutus" id="aboutus">
+                <h1 class="section-h1">Kim jesteśmy?
+                    <div class="underline"></div>
+                </h1>
+
+                <div class="aboutus-cards">
+
+                    <div class="aboutus-card">
+                        <div class="header">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="body">
+                          Jesteśmy wielbicielami książek, audiobooków oraz filmów. Nie przegapiamy żadnej okazji do dyskusji na ich temat!
+                        </div>
+                    </div>
+
+                    <div class="aboutus-card">
+                        <div class="header">
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+                        <div class="body">
+                          Jesteśmy szalonymi miłośnikami zwierząt! Pozwalamy na teren naszej biblioteki wchodzić ze swoimi ukochanymi pupilami. Kaganiec i smycz jest nam obca!
+                        </div>
+                    </div>
+
+                    <div class="aboutus-card">
+                        <div class="header">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="body">
+                          Jesteśmy organizacją, która bardzo stawia na punktualność. W razie konieczności sprowadzimy twoją książkę w 48h!
+                        </div>
+                    </div>
+
+                    <div class="aboutus-card">
+                        <div class="header">
+                            <i class="fa-solid fa-burger"></i>
+                        </div>
+                        <div class="body">
+                          Tak, ciężko się nam do tego przyznać, ale uwielbiamy dobre jedzenie! Rzadko kto umie się u nas oprzeć! :)
+                        </div>
+                    </div>
+
+                    <div class="aboutus-card">
+                        <div class="header">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+                        <div class="body">
+                          W pracy nie ma przed nami tajemnic! Jesteśmy ze sobą mocno związani, co tworzy wspaniałą i niezależną relację! 
+                        </div>
+                    </div>
+
+                    <div class="aboutus-card">
+                        <div class="header">
+                            <i class="fa-solid fa-face-smile-beam"></i>
+                        </div>
+                        <div class="body">
+                          Jesteśmy otwarci przez 12 godzin dziennie: od 6:00 do 18:00. Mile widziany każdy klient, nawet ten, który nie lubi czytać! :) 
+                        </div>
+                    </div>
+
+                </div>
+
+                <h1 class="section-h1">Team
+                    <div class="underline"></div>
+                </h1>
+
+                <div class="aboutus-team">
+                    <div class="image-shadow"></div>
+                    <div class="aboutus-team-cards">
+                        <div data-team="1" class="aboutus-team-card">
+                            <span id="first-animation"></span>
+                            <div class="team-card-img"></div>
+                            <div class="team-card-header">Właściciel Jarek</div>
+                            <div class="team-card-text">DSADSADAS</div>
+                            <div class="team-card-socials">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+
+                        <div data-team="2" class="aboutus-team-card">
+                            <span id="second-animation"></span>
+                            <div class="team-card-img"></div>
+                            <div class="team-card-header">Student Darek</div>
+                            <div class="team-card-text">SDASDAS</div>
+                            <div class="team-card-socials">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>                   
+                            </div>
+                        </div>
+
+                        <div data-team="3" class="aboutus-team-card">
+                            <span id="third-animation"></span>
+                            <div class="team-card-img"></div>
+                            <div class="team-card-header">Studentka Zosia</div>
+                            <div class="team-card-text">QWEQWEQWE</div>
+                            <div class="team-card-socials">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-arrow">&lt</div>
+                    <div class="right-arrow">&gt</div>
+                </div>
+                
+
+
+                
+            </section>
+            <section class="prices" id="prices">
+                sfa
+            </section>
+            <section class="repo" id="repo">
+                sfa
+            </section>
+            <section class="contact" id="contact">
+                sfa
+            </section>
+        </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d27bd9035e.js" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

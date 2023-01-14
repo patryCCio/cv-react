@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            position: relative;
+        }
+        
+        span{
+            position: absolute;
+            display: block;
+            border: 2px solid brown;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: brown;
+            font-family: sans-serif;
+            transition: .3s;
+        }
+
+        span:hover{
+            background-color: brown;
+            color: white;
+        }
+
+        div{
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 100vh;
+            left: 0;
+            transform: translate(0%, -100%);
+        }
+
+        div.wall{
+            transition: 1s ease;
+            z-index: 3;
+        }
+
+        span:hover ~ .wall{
+            width: 20vw;
+            height: 20vw;
+            background-color: royalblue;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+        div.dash{
+            transition: 1s ease;
+            z-index: 2;
+        }
+
+        span:hover ~ .dash{
+            width: 20vw;
+            height: 20vw;
+            background-color: brown;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -100%) rotate(45deg) scale(0.705);
+        }
+
+        div.chimney{
+            transition: 1s ease;
+            z-index: 1;
+        }
+
+        span:hover ~ .chimney{
+            width: 3vw;
+            height: 10vw;
+            background-color: peru;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(120%, -200%);
+        }
+
+        div.doors{
+            transition: 1s ease;
+            z-index: 3;
+        }
+
+        span:hover ~ .doors{
+            width: 6vw;
+            height: 10vw;
+            background-color: peru;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-90%, 0%);
+        }
+
+        div.window{
+            transition: 1s ease;
+            z-index: 3;
+        }
+
+        span:hover ~ .window{
+            width: 6vw;
+            height: 6vw;
+            background-color: purple;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(40%, 0%);
+        }
+
+        div.long-window{
+            transition: 1s ease;
+            z-index: 3;
+        }
+
+        span:hover ~ .long-window{
+            width: 18vw;
+            height: 6vw;
+            background-color: purple;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -150%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div class="wall"></div>
+    <div class="dash"></div>
+    <div class="chimney"></div>
+    <div class="doors"></div>
+    <div class="window"></div>
+    <div class="long-window"></div>
+</body>
+
+</html>
