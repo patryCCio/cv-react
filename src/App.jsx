@@ -1,4 +1,4 @@
-import { Navigate, Outlet, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -19,7 +19,7 @@ const Layout = () => {
 
 const App = () => {
   return (
-    <Router basename="/cv-react">
+    <HashRouter>
       <div className="wrapper">
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -30,7 +30,7 @@ const App = () => {
           </Route>
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
