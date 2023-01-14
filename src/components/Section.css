@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Patrick+Hand&family=Roboto&display=swap");
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+  --background1: #1e2326;
+  --background2: #252a2e;
+  --background3: #313437;
+  --background2-alpha: rgba(37, 42, 46, 0.6);
+  --text1: #d0cccd;
+  --text2: #bbbbbb;
+  --theme1: rgb(235, 46, 46);
+  --theme2: rgb(241, 70, 70);
+  --theme3: rgba(235, 46, 46, 0.6);
+  --shadow1: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background1);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: var(--text1);
+  background-color: var(--background1);
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 30px var(--shadow1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--theme1);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--theme3)), color-stop(50%, var(--theme2)), to(var(--theme3)));
+  background: linear-gradient(0deg, var(--theme3) 0%, var(--theme2) 50%, var(--theme3) 100%);
+  outline: none;
+  border-radius: 5px;
+}
+
+.section-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-wrapper .section-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.section-wrapper .section-name .section-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: var(--theme1);
+}
+
+.section-wrapper .section-name .section-h2 {
+  font-family: "Patrick Hand", cursive;
+  font-weight: normal;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.section-wrapper .section-name .first-line,
+.section-wrapper .section-name .second-line {
+  margin-bottom: 10px;
+  background-color: var(--theme1);
+}
+
+.section-wrapper .section-name .first-line {
+  width: 40%;
+  height: 3px;
+  -webkit-animation-name: first-line;
+          animation-name: first-line;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.section-wrapper .section-name .second-line {
+  width: 25%;
+  height: 2px;
+  -webkit-animation-name: second-line;
+          animation-name: second-line;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes first-line {
+  0% {
+    width: 40%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes first-line {
+  0% {
+    width: 40%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes second-line {
+  0% {
+    width: 25%;
+  }
+  50% {
+    width: 35%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes second-line {
+  0% {
+    width: 25%;
+  }
+  50% {
+    width: 35%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=Section.css.map */

@@ -1,0 +1,110 @@
+.nav-container {
+  padding: 0 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    #Logo {
+      width: 60px;
+      height: 60px;
+    }
+    h2 {
+      padding-left: 10px;
+      font-family: sans-serif;
+      font-size: 12px;
+      color: var(--main-color);
+    }
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--first-color);
+    transform: translateX(-100%);
+    transition: 0.3s;
+    .nav-a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: var(--main-color);
+      text-decoration: none;
+      width: 100%;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 100%;
+      span {
+        position: absolute;
+        bottom: 20px;
+        width: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        background-color: var(--main-color);
+        transition: 0.3s;
+      }
+    }
+
+    .nav-a.active {
+      span {
+        width: 60%;
+      }
+    }
+  }
+
+  .navbar.active {
+    transform: translateX(0%);
+  }
+}
+
+.nav-container.active {
+  background-color: var(--first-color);
+}
+
+@media (min-width: 1025px) {
+  .nav-container {
+    height: 100px;
+    .logo-container {
+      #Logo {
+        width: 80px;
+        height: 80px;
+      }
+      h2 {
+        padding-left: 30px;
+        font-family: sans-serif;
+        font-size: 22px;
+      }
+    }
+    .navbar {
+      position: relative;
+      transform: translateX(0);
+      height: 100px;
+      flex-direction: row;
+      width: 500px;
+      background-color: transparent;
+      margin: 0 80px 0 0;
+      .nav-a {
+        width: 120px;
+        font-size: 18px;
+      }
+    }
+  }
+}

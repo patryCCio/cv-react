@@ -1,0 +1,68 @@
+/* BACKGROUND ANIMATION */
+
+@import "../styles/App";
+
+span.section-animation {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  opacity: 1;
+  transform: translate(0, -100%);
+  background: var(--theme1);
+  background: linear-gradient(
+    0deg,
+    var(--theme1) 0%,
+    rgba(235, 46, 46, 0) 100%
+  );
+  width: 1px;
+}
+
+span.section-animation:nth-of-type(1) {
+  left: 90%;
+  height: 19%;
+  animation: line-animation1 5s linear infinite;
+}
+
+span.section-animation:nth-of-type(2) {
+  left: 68%;
+  height: 10%;
+  animation: line-animation1 5s 1s linear infinite;
+}
+
+span.section-animation:nth-of-type(3) {
+  left: 32%;
+  height: 15%;
+  animation: line-animation1 5s 1.5s linear infinite;
+}
+
+span.section-animation:nth-of-type(4) {
+  left: 10%;
+  height: 12%;
+  animation: line-animation1 5s 0.5s linear infinite;
+}
+
+span.section-animation:nth-of-type(5) {
+  left: 25%;
+  height: 8%;
+  animation: line-animation1 5s 3s linear infinite;
+}
+
+@keyframes line-animation1 {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+  31% {
+    top: 90%;
+  }
+  32% {
+    opacity: 0;
+  }
+  40% {
+    top: 0;
+  }
+}
+

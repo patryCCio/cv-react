@@ -1,0 +1,318 @@
+@import "../../styles/App";
+
+.burger-wrapper {
+  position: fixed;
+  visibility: visible;
+  top: 15px;
+  right: 15px;
+  background-color: var(--theme1);
+  width: 60px;
+  height: 60px;
+  z-index: 1001;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .burger {
+    position: relative;
+    width: 65%;
+    height: 48%;
+    span {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      left: 0;
+      border-radius: 50%;
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+
+    span:nth-child(1) {
+      top: 0;
+      transition: 0.2s 0.2s top, 0.2s 0s transform;
+    }
+
+    span:nth-child(2) {
+      top: calc(50% - 1.5px);
+      transition: 0.3s 0.1s;
+    }
+
+    span:nth-child(3) {
+      bottom: 0;
+      transition: 0.2s 0.2s bottom, 0.2s 0s transform;
+    }
+  }
+}
+
+.burger-wrapper.active {
+  .burger {
+    span:nth-child(1) {
+      top: calc(50% - 1.5px);
+      transform: rotate(-45deg);
+      transition: 0.2s 0s top, 0.2s 0.2s transform;
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      bottom: calc(50% - 1.5px);
+      transform: rotate(45deg);
+      transition: 0.2s 0s bottom, 0.2s 0.2s transform;
+    }
+  }
+}
+
+.nav-name {
+  color: var(--theme1);
+  font-family: "Indie Flower", cursive;
+}
+
+nav {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(100vw);
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    li {
+      position: relative;
+      flex-grow: 1;
+      width: 100%;
+      font-size: 1.2em;
+      font-family: "Lato", sans-serif;
+      text-transform: uppercase;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        &:hover {
+          color: var(--theme1);
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        transition: 0.3s;
+      }
+
+      a.active {
+        color: var(--theme1);
+      }
+
+      a.active + span {
+        width: 70%;
+        background-color: var(--theme1);
+      }
+    }
+  }
+}
+
+nav.active {
+  transform: translateX(0);
+}
+
+.color-switcher {
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  top: 100px;
+  right: 0;
+  transform: translateX(220px);
+  transition: 0.3s;
+  .color-button {
+    width: 80px;
+    height: 60px;
+    padding-right: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--background3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      color: var(--text1);
+      font-size: 2em;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: var(--theme1);
+      }
+    }
+  }
+  .color-settings {
+    width: 220px;
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-bottom-left-radius: 10px;
+    color: var(--text1);
+    background-color: var(--background3);
+    .color-light {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .slider-box {
+        width: 100px;
+        height: 20px;
+        position: relative;
+        background-color: var(--background1);
+        border-radius: 10px;
+        .slider {
+          position: absolute;
+          width: 0;
+          height: 100%;
+          background-color: var(--theme1);
+          transition: 0.3s;
+          border-radius: 10px;
+        }
+        .dot {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 8px;
+          height: 30px;
+          width: 30px;
+          left: -5px;
+          top: -5px;
+          cursor: pointer;
+          background-color: var(--background2);
+          border-radius: 50%;
+          transition: 0.3s;
+          .dot-inner {
+            width: 100%;
+            height: 100%;
+            background-color: var(--background1);
+            border-radius: 50%;
+          }
+        }
+      }
+      .slider-box.active {
+        .slider {
+          width: 100%;
+        }
+
+        .dot {
+          left: calc(100% - 20px);
+          .dot-inner {
+            background-color: var(--theme1);
+          }
+        }
+      }
+    }
+    .color-elements {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        text-align: center;
+      }
+      .color-el {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        .el-box {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 0;
+
+          .el {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 0 3px transparent;
+            transition: 0.3s;
+          }
+          .el.active {
+            box-shadow: 0 0 0 3px var(--text1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.color-switcher.active {
+  transform: translateX(0);
+  z-index: 102;
+  .color-button {
+    .icon {
+      animation: rotateSettings 2s linear infinite;
+      color: var(--theme1);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .burger-wrapper {
+    visibility: hidden;
+  }
+
+  nav {
+    transform: translateX(0);
+    height: 80px;
+    background-color: transparent;
+    .navbar {
+      flex-direction: row;
+      justify-content: flex-end;
+      li {
+        flex-grow: 0;
+        width: 180px;
+        height: 100%;
+        a {
+          color: var(--text1);
+        }
+      }
+    }
+  }
+  nav.active {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateSettings {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

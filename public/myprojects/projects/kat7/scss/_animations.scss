@@ -1,0 +1,161 @@
+@keyframes sun {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes cloud1-desk {
+  0% {
+    left: calc(0% - 20vw);
+    opacity: 1;
+  }
+  95% {
+    left: 100%;
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+    left: 100%;
+  }
+  97% {
+    left: calc(0% - 20vw);
+    opacity: 0;
+  }
+  98% {
+    opacity: 1;
+    left: calc(0% - 20vw);
+  }
+  100% {
+    left: calc(0% - 20vw);
+  }
+}
+@keyframes cloud1-mob {
+  0% {
+    left: calc(0% - 50vw);
+    opacity: 1;
+  }
+  95% {
+    left: 100%;
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+    left: 100%;
+  }
+  97% {
+    left: calc(0% - 50vw);
+    opacity: 0;
+  }
+  98% {
+    opacity: 1;
+    left: calc(0% - 50vw);
+  }
+  100% {
+    left: calc(0% - 50vw);
+  }
+}
+@keyframes cloud2-mob {
+  0% {
+    left: 100%;
+    opacity: 1;
+  }
+  95% {
+    left: calc(0% - 70vw);
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+    left: calc(0% - 70vw);
+  }
+  97% {
+    left: 100%;
+    opacity: 0;
+  }
+  98% {
+    opacity: 1;
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+@keyframes cloud2-desk {
+    0% {
+      left: 100%;
+      opacity: 1;
+    }
+    95% {
+      left: calc(0% - 37vw);
+      opacity: 1;
+    }
+    96% {
+      opacity: 0;
+      left: calc(0% - 37vw);
+    }
+    97% {
+      left: 100%;
+      opacity: 0;
+    }
+    98% {
+      opacity: 1;
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+@keyframes cloud3-mob {
+  0% {
+    left: calc(0% - 60vw);
+    opacity: 1;
+  }
+  95% {
+    left: 100%;
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+    left: 100%;
+  }
+  97% {
+    left: calc(0% - 60vw);
+    opacity: 0;
+  }
+  98% {
+    opacity: 1;
+    left: calc(0% - 60vw);
+  }
+  100% {
+    left: calc(0% - 60vw);
+  }
+}
+@keyframes cloud3-desk {
+    0% {
+      left: calc(0% - 20vw);
+      opacity: 1;
+    }
+    95% {
+      left: 100%;
+      opacity: 1;
+    }
+    96% {
+      opacity: 0;
+      left: 100%;
+    }
+    97% {
+      left: calc(0% - 20vw);
+      opacity: 0;
+    }
+    98% {
+      opacity: 1;
+      left: calc(0% - 20vw);
+    }
+    100% {
+      left: calc(0% - 20vw);
+    }
+  }

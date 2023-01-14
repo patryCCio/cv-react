@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Patrick+Hand&family=Roboto&display=swap");
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+  --background1: #1e2326;
+  --background2: #252a2e;
+  --background3: #313437;
+  --background2-alpha: rgba(37, 42, 46, 0.6);
+  --text1: #d0cccd;
+  --text2: #bbbbbb;
+  --theme1: rgb(235, 46, 46);
+  --theme2: rgb(241, 70, 70);
+  --theme3: rgba(235, 46, 46, 0.6);
+  --shadow1: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background1);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: var(--text1);
+  background-color: var(--background1);
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 30px var(--shadow1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--theme1);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--theme3)), color-stop(50%, var(--theme2)), to(var(--theme3)));
+  background: linear-gradient(0deg, var(--theme3) 0%, var(--theme2) 50%, var(--theme3) 100%);
+  outline: none;
+  border-radius: 5px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 30vh;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6em;
+  font-size: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+section .section-wrapper {
+  margin-bottom: 30px;
+}
+
+.about .content {
+  padding: 0 20px;
+}
+
+.about .content p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.about .content p strong {
+  color: var(--theme1);
+}
+
+.about .content .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.about .content .bottom .left {
+  width: 100%;
+  border-bottom: 1px solid var(--theme1);
+  border-right: 0px solid var(--theme1);
+}
+
+.about .content .bottom .left h3 {
+  font-family: "Patrick Hand", cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.about .content .bottom .left .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.about .content .bottom .left .informations .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  gap: 20px;
+}
+
+.about .content .bottom .left .informations .info .info-icon {
+  color: var(--theme1);
+  font-size: 1.5em;
+}
+
+.about .content .bottom .left .informations .info .info-p {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9em;
+}
+
+.about .content .bottom .left .informations .info .info-p span {
+  background-color: var(--theme2);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.about .content .bottom .right {
+  width: 100%;
+}
+
+.about .content .bottom .right h3 {
+  font-family: "Patrick Hand", cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.about .content .bottom .right .hobbies {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .content .bottom .right .hobbies .hobby {
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: var(--background2);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about .content .bottom .right .hobbies .hobby:hover {
+  color: var(--theme1);
+  -webkit-box-shadow: 0 0 10px 1px var(--theme1);
+          box-shadow: 0 0 10px 1px var(--theme1);
+}
+
+.about .content .bottom .right .hobbies .hobby .hobby-p {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.about .content .bottom .right .hobbies .hobby .hobby-icon {
+  font-size: 1.5em;
+}
+
+.experience {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.experience .skills-wrapper {
+  position: relative;
+  z-index: 80;
+  margin: 60px auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 900px;
+  min-height: 500px;
+  background-color: var(--background2);
+  border-radius: 10px;
+  color: var(--text1);
+}
+
+.experience .skills-wrapper .skills-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.experience .skills-wrapper .skills-header .skills-language {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 4px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--theme1);
+}
+
+.experience .skills-wrapper .skills-header .skills-language .skills-button-language {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 1em;
+  padding: 5px;
+  background-color: var(--background1);
+  color: var(--text2);
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.experience .skills-wrapper .skills-header .skills-language .skills-button-language:hover {
+  background-color: var(--theme1);
+  cursor: pointer;
+}
+
+.experience .skills-wrapper .skills-header .skills-language .skills-button-language.active {
+  background-color: var(--theme1);
+}
+
+.experience .skills-wrapper .skills-header .skills-type {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 4px;
+  padding: 10px 0;
+}
+
+.experience .skills-wrapper .skills-header .skills-type .skills-button-type {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  font-size: 1em;
+  padding: 5px;
+  background-color: var(--background1);
+  color: var(--text2);
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.experience .skills-wrapper .skills-header .skills-type .skills-button-type:hover {
+  background-color: var(--theme2);
+  cursor: pointer;
+}
+
+.experience .skills-wrapper .skills-header .skills-type .skills-button-type.active {
+  background-color: var(--theme2);
+}
+
+.experience .skills-wrapper .skills-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experience .skills-wrapper .skills-body .content {
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: var(--background1);
+  -webkit-box-shadow: inset 0 0 5px 1px var(--shadow1);
+          box-shadow: inset 0 0 5px 1px var(--shadow1);
+  margin: 10px 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.experience .skills-wrapper .skills-body .content .inner-side {
+  margin: 15px 0 35px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.experience .skills-wrapper .skills-body .content .inner-side .text {
+  font-family: "Lato", sans-serif;
+  line-height: 1.4em;
+  width: 80%;
+  padding: 10px 0;
+  margin: auto;
+  text-align: left;
+}
+
+.experience .skills-wrapper .skills-body .content .inner-side .text .inner-text-span::before {
+  content: "\2022";
+  color: var(--theme2);
+  margin-right: 10px;
+  font-size: 1.4em;
+}
+
+.experience .skills-wrapper .skills-body .content .inner-side .h4-title {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto 10px auto;
+  padding-bottom: 10px;
+  color: var(--theme1);
+  border-bottom: 1px solid var(--theme2);
+}
+
+.experience .skills-wrapper .skills-body .content .inner-h3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: var(--shadow1);
+  text-transform: uppercase;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--theme1);
+}
+
+.experience .skills-wrapper .skills-body .content::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.experience .skills-wrapper .skills-body .content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.experience .skills-wrapper .skills-body .content::-webkit-scrollbar-thumb {
+  background-color: var(--theme2);
+  outline: none;
+  border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+  .about .content .bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about .content .bottom .left {
+    width: 450px;
+    border-bottom: none;
+    border-right: 1px solid var(--theme1);
+  }
+  .about .content .bottom .left h3 {
+    text-align: start;
+  }
+  .about .content .bottom .left .informations {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about .content .bottom .right .hobbies .hobby {
+    margin: 30px 60px;
+  }
+  .experience .skills-wrapper .skills-body .content {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .about .content .bottom .right .hobbies .hobby {
+    margin: 30px 90px;
+  }
+}
+/*# sourceMappingURL=Page.css.map */

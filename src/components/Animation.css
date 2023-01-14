@@ -1,0 +1,158 @@
+/* BACKGROUND ANIMATION */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Patrick+Hand&family=Roboto&display=swap");
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+  --background1: #1e2326;
+  --background2: #252a2e;
+  --background3: #313437;
+  --background2-alpha: rgba(37, 42, 46, 0.6);
+  --text1: #d0cccd;
+  --text2: #bbbbbb;
+  --theme1: rgb(235, 46, 46);
+  --theme2: rgb(241, 70, 70);
+  --theme3: rgba(235, 46, 46, 0.6);
+  --shadow1: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background1);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: var(--text1);
+  background-color: var(--background1);
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 30px var(--shadow1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--theme1);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--theme3)), color-stop(50%, var(--theme2)), to(var(--theme3)));
+  background: linear-gradient(0deg, var(--theme3) 0%, var(--theme2) 50%, var(--theme3) 100%);
+  outline: none;
+  border-radius: 5px;
+}
+
+span.section-animation {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  opacity: 1;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  background: var(--theme1);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--theme1)), to(rgba(235, 46, 46, 0)));
+  background: linear-gradient(0deg, var(--theme1) 0%, rgba(235, 46, 46, 0) 100%);
+  width: 1px;
+}
+
+span.section-animation:nth-of-type(1) {
+  left: 90%;
+  height: 19%;
+  -webkit-animation: line-animation1 5s linear infinite;
+          animation: line-animation1 5s linear infinite;
+}
+
+span.section-animation:nth-of-type(2) {
+  left: 68%;
+  height: 10%;
+  -webkit-animation: line-animation1 5s 1s linear infinite;
+          animation: line-animation1 5s 1s linear infinite;
+}
+
+span.section-animation:nth-of-type(3) {
+  left: 32%;
+  height: 15%;
+  -webkit-animation: line-animation1 5s 1.5s linear infinite;
+          animation: line-animation1 5s 1.5s linear infinite;
+}
+
+span.section-animation:nth-of-type(4) {
+  left: 10%;
+  height: 12%;
+  -webkit-animation: line-animation1 5s 0.5s linear infinite;
+          animation: line-animation1 5s 0.5s linear infinite;
+}
+
+span.section-animation:nth-of-type(5) {
+  left: 25%;
+  height: 8%;
+  -webkit-animation: line-animation1 5s 3s linear infinite;
+          animation: line-animation1 5s 3s linear infinite;
+}
+
+@-webkit-keyframes line-animation1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  31% {
+    top: 90%;
+  }
+  32% {
+    opacity: 0;
+  }
+  40% {
+    top: 0;
+  }
+}
+
+@keyframes line-animation1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  31% {
+    top: 90%;
+  }
+  32% {
+    opacity: 0;
+  }
+  40% {
+    top: 0;
+  }
+}
+/*# sourceMappingURL=Animation.css.map */

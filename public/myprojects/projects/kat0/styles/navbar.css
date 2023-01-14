@@ -1,0 +1,432 @@
+/* fixes */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ====== */
+
+/* górna nawigacja */
+.nav-bar{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    transition: .2s;
+    z-index: 2;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.nav-bar.active{
+    height: 8vh;
+    -webkit-box-shadow: 0px 3px 6px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 3px 6px -3px rgba(66, 68, 90, 1);
+    box-shadow: 0px 3px 6px -3px rgba(66, 68, 90, 1);
+    background-color: white;
+}
+
+/* ========================================= */
+
+/* Burger */
+.burger-wrapper{
+    position: relative;
+    top: 50%;
+    left: 2vw;
+    top: 2vw;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(34, 165, 34);
+    padding: 8px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.burger-wrapper:hover{
+    cursor: pointer;
+}
+
+.burger{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger span{
+    display: block;
+    width: 80%;
+    height: var(--sizeSpanBurger);
+    position: absolute;
+    background-color: white;
+    border-radius: 20%;
+    left: calc(50% - 12px);
+}
+
+.burger-wrapper span{
+    transition: top .2s .2s, bottom .2s .2s, opacity .1s .2s, transform .2s .4s, width .2s .6s;
+}
+
+.burger-wrapper.active{
+    background-color: white;
+    box-shadow: 0 0 0 3px rgb(34, 165, 34);
+}
+
+.burger-wrapper.active span{
+    background-color: rgb(34, 165, 34);
+}
+
+.burger-wrapper span:nth-child(1){
+    top: 0;
+}
+
+.burger-wrapper span:nth-child(2){
+    top: calc(50% - (var(--sizeSpanBurger)/2));
+    opacity: 1;
+}
+
+.burger-wrapper span:nth-child(3){
+    bottom: 0;
+}
+
+.burger-wrapper.active span:nth-child(1){
+    top: calc(50% - (var(--sizeSpanBurger)/2));
+    transform: rotate(-45deg);
+}
+
+.burger-wrapper.active span:nth-child(2){
+    opacity: 0;
+}
+
+.burger-wrapper.active span:nth-child(3){
+    bottom: calc(50% - (var(--sizeSpanBurger)/2));
+    transform: rotate(45deg);
+    /* width: 100%; */
+}
+/* ===================================================== */
+
+/* pudełko nawigacji */
+.nav-wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    top: 0;
+    bottom: 0;
+    left: -25vw;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    z-index: 1;
+    transition: .3s;
+    padding-top: 10vh;
+    -webkit-box-shadow: 0px 3px 6px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 3px 6px -3px rgba(66, 68, 90, 1);
+    box-shadow: 0px 3px 6px -2px rgba(66, 68, 90, 1);
+}
+
+.nav-wrapper.active{
+    left: 0;
+}
+
+/* przyciski w nawigacji */
+
+.nav-ul{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    justify-content: space-around;
+}
+
+.nav-ul > li{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    transition: .2s;
+    flex-basis: 15%;
+}
+
+.nav-ul >li span:not(span.arrow):not(span.arrow2){
+    background-color: rgb(238, 236, 236);
+    flex-basis: 80%;
+}
+
+.nav-ul > li:hover:not(.nav-ul .liHasChild.active > span){
+    color: rgb(34, 165, 34);
+    cursor: pointer;
+}
+
+.nav-ul .liHasChild{
+    position: relative;
+    flex-grow: 0;
+}
+
+.nav-ul .liHasChild.active{
+    border-bottom: 1px solid rgb(168, 168, 168);
+    justify-content: flex-end;
+    flex-grow: 1;
+    color: rgb(34, 165, 34);
+}
+
+.nav-ul .liHasChild.active > span:hover:not(span.arrow):not(span.arrow2){
+    background-color: rgb(34, 165, 34);
+    color: white;
+}
+
+.nav-ul .liHasChild span:not(span.arrow):not(span.arrow2){
+    display: none;
+}
+
+.nav-ul .liHasChild.active > span:not(span.arrow):not(span.arrow2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-right: 2px solid rgb(34, 165, 34);
+    transition: .4s;
+    padding: 10px;
+}
+
+/* span arrow */
+
+.nav-ul .liHasChild span.arrow, .nav-ul .liHasChild span.arrow2{
+    position: absolute;
+    right: 10%;
+    transition: .4s;
+    width: 25px;
+    height: 7px;
+    border-radius: 40%;
+    background-color: rgb(34, 165, 34);
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+}
+
+.nav-ul .liHasChild span.arrow{
+    top: calc(50% - 3.5px);
+    transform: rotate(-90deg);
+}
+
+.nav-ul .liHasChild span.arrow2{
+    top: calc(50% - 3.25px);
+}
+
+.liHasChild.active span.arrow{
+    transform: rotate(0deg);
+    top: 5px;
+}
+
+.liHasChild.active span.arrow2{
+    top: 5px;
+}
+
+.nav-ul span.arrow:hover{
+    cursor: pointer;
+}
+
+
+/* ============================ */
+
+/* social media */
+
+
+.social-media{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(238, 236, 236);
+    font-size: 1.6em;
+    -webkit-box-shadow: 0px -1px 6px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px -1px 6px -3px rgba(66, 68, 90, 1);
+    box-shadow: 0px -1px 6px -2px rgba(66, 68, 90, 1);
+}
+
+.social-media i{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    line-height: 0;
+    text-align: center;
+    border-radius: 0% 100% 100% 100%;
+    transition: .3s;
+    transform-origin: 50% 50%;
+}
+
+.social-media i:hover{
+    cursor: pointer;
+    color: white;
+    animation: social-icons 3s .4s infinite;
+    
+}
+
+
+#facebook-i:hover{
+    background-color: rgba(35, 118, 212, 0.904);
+}
+
+#youtube-i:hover{
+    background-color: rgba(255, 0, 0, 0.904);
+}
+
+#twitter-i:hover{
+    background-color: rgba(59, 141, 248, 0.904);
+}
+
+#linkedin-i:hover{
+    background-color: rgba(42, 69, 224, 0.904);
+}
+
+@keyframes social-icons{
+    2%{
+        transform: rotate(-3deg);
+    }
+
+    4%{
+        transform: rotate(3deg);
+    }
+
+    6%{
+        transform: rotate(-3deg);
+    }
+
+    8%{
+        transform: rotate(-3deg);
+    }
+
+    10%{
+        transform: rotate(7deg);
+    }
+
+    12%{
+        transform: rotate(-7deg);
+    }
+
+    18%{
+        transform: rotate(10deg);
+    }
+
+    20%{
+        transform: rotate(-10deg);
+    }
+
+    22%{
+        transform: rotate(10deg);
+    }
+
+    24%{
+        transform: rotate(-10deg);
+    }
+
+    26%{
+        transform: rotate(10deg);
+    }
+
+    28%{
+        transform: rotate(-10deg);
+    }
+
+    30%{
+        transform: rotate(0deg)
+    }
+
+
+}
+
+@media (max-width: 1024px){
+    .nav-wrapper{
+        width: 100%;
+        left: -100%;
+        overflow: hidden;
+    }
+
+    .nav-ul .liHasChild span.arrow2, .nav-ul .liHasChild span.arrow{
+        right: 200px;
+    }
+
+    .nav-ul > li{
+        width: 100%;
+    }
+
+    .burger-wrapper{
+        left: 10vw;
+        top: 10vw;
+    }
+
+    .nav-ul .liHasChild{
+        border-right: none;
+    }
+
+    .nav-ul .liHasChild.active{
+        border-bottom: 2px solid rgb(168, 168, 168);
+    }
+
+    .nav-bar.active{
+        box-shadow: none;
+        width: 100%;
+        height: 8vh;
+        background-color: transparent;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1024px){
+    .burger-wrapper{
+        left: 5vw;
+        top: 5vw;
+    }
+
+    span.arrow, span.arrow2{
+        left: 10vw;
+    }
+
+    .nav-ul .liHasChild{
+        flex-direction: row;
+    }
+
+    .nav-ul .liHasChild.active > span:nth-child(1){
+        margin-left: 20px;
+    }
+
+    .nav-ul .liHasChild.active > span:not(span.arrow):not(span.arrow2){
+        flex-grow: 0;
+        flex-direction: row;
+        border-right: none;
+    }
+
+    .nav-ul{
+        margin-top: 20px;
+    }
+
+    .nav-ul .liHasChild.active{
+        flex-grow: 0;
+        border-bottom: none;
+    }
+
+    .liHasChild.active span.arrow{
+        top: calc(50% - 3.5px);
+    }
+    
+    .liHasChild.active span.arrow2{
+        top: calc(50% - 3.25px);
+    }
+
+}
