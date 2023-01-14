@@ -420,7 +420,7 @@
                 value: function () {
                   return l.a.createElement(
                     u.a,
-                    { basename: "/myprojects/teach/kat54/" },
+                    { basename: "/cv-react/myprojects/teach/kat54/" },
                     l.a.createElement(q, null)
                   );
                 },
