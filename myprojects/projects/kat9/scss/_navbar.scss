@@ -1,0 +1,388 @@
+@import "animationssvg";
+
+.navbar {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 120px;
+  .navbar-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .hexagon {
+      width: 80px;
+      opacity: 0;
+      top: 20px;
+      right: 20px;
+      position: absolute;
+    }
+
+    .hexagon:hover {
+      cursor: pointer;
+    }
+
+    #Main_Hex {
+      transform: scale(1) translate(0, 0);
+      .hex-p1,
+      .hex-p2 {
+        transform-origin: 50% 50%;
+        transform: rotate(15deg);
+      }
+      z-index: 22;
+      opacity: 1;
+      .hex-l1,
+      .hex-l2,
+      .hex-l3,
+      .hex-l4,
+      .hex-l5,
+      .hex-l6,
+      .hex-l7,
+      .hex-l8 {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 8;
+      }
+
+      .hex-l1,
+      .hex-l2 {
+        transition: 0.3s 0.5s;
+      }
+
+      .hex-l3,
+      .hex-l4 {
+        stroke-dasharray: 111;
+        transition: 0.3s 0.5s;
+      }
+
+      .hex-l1 {
+        stroke-dasharray: 56;
+        stroke-dashoffset: 0;
+      }
+
+      .hex-l2 {
+        stroke-dasharray: 56;
+        stroke-dashoffset: 0;
+      }
+
+      .hex-l5,
+      .hex-l6 {
+        stroke-dasharray: 333;
+        stroke-dashoffset: 333;
+        transition: 0.6s 0.2s;
+      }
+
+      .hex-l7,
+      .hex-l8 {
+        stroke-dasharray: 153;
+        stroke-dashoffset: 153;
+        transition: 0.3s 0s;
+      }
+    }
+
+    #Home_Hex {
+      transition: 0.3s 0.8s;
+      .hex-p1,
+      .hex-p2 {
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .hex-l1,
+      .hex-l2,
+      .hex-l3,
+      .hex-l4 {
+        stroke: white;
+        fill: transparent;
+      }
+
+      .hex-l1,
+      .hex-l2,
+      .hex-l3 {
+        stroke-width: 6;
+      }
+
+      .hex-l4 {
+        stroke-width: 4;
+      }
+
+      .hex-l1 {
+        stroke-dasharray: 330;
+        stroke-dashoffset: 0;
+        transition: 0.3s 0.9s;
+      }
+
+      .hex-l2 {
+        stroke-dasharray: 362;
+        stroke-dashoffset: 0;
+        transition: 0.3s 0.6s;
+      }
+
+      .hex-l3 {
+        stroke-dasharray: 473;
+        stroke-dashoffset: 473;
+        transition: 0.3s 0.3s;
+      }
+
+      .hex-l4 {
+        stroke-dasharray: 34;
+        stroke-dashoffset: 34;
+        transition: 0.3s 0s;
+      }
+    }
+
+    #Home_Hex:hover {
+      .hex-p1 {
+        fill: url(#Home_Gradient);
+        transition: 0.3s;
+      }
+      .hex-l1 {
+        stroke-dashoffset: 330;
+        transition: 0.3s 0s;
+      }
+      .hex-l2 {
+        stroke-dashoffset: 362;
+        transition: 0.3s 0.3s;
+      }
+      .hex-l3 {
+        stroke-dashoffset: 0;
+        transition: 0.3s 0.6s;
+      }
+      .hex-l4 {
+        stroke-dashoffset: 0;
+        transition: 0.3s 0.9s;
+      }
+    }
+
+    #About_Hex {
+      transition: 0.3s 0.6s;
+      .hex-p1,
+      .hex-p2 {
+        transform-origin: 50% 50%;
+        transform: rotate(25deg);
+      }
+      .hex-l1 {
+        fill: white;
+        width: 40px;
+        height: 40px;
+        stroke-width: 0;
+        stroke: white;
+        transition: 0.3s;
+        position: relative;
+      }
+      .hex-l2 {
+        fill: white;
+        opacity: 1;
+        transition: 0.3s 0.3s;
+      }
+    }
+    #About_Hex:hover {
+      .hex-p1{
+        fill: url(#About_Gradient);
+      }
+      .hex-l1 {
+        stroke-width: 45;
+        transform: translateY(40px);
+        animation-name: about_l1;
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      .hex-l2 {
+        opacity: 0;
+        transition: 0.3s 0s;
+      }
+    }
+
+    #Team_Hex {
+      transition: 0.3s 0.4s;
+      .hex-l1,
+      .hex-l3 {
+        transform-origin: 50% 50%;
+        transform: translate(0, 0);
+      }
+      .hex-l1 {
+        fill: rgb(197, 197, 197);
+        transition: 0.3s 0.2s;
+      }
+      .hex-l3 {
+        fill: rgb(167, 166, 166);
+        transition: 0.3s 0s;
+      }
+      .hex-l2 {
+        fill: white;
+      }
+    }
+    #Team_Hex:hover {
+      .hex-p1{
+        fill: url(#Team_Gradient)
+      }
+      .hex-l1 {
+        transform: translate(-40px, 6px) scale(0.9);
+        transition: 0.3s;
+      }
+      .hex-l3 {
+        transform: translate(40px, 6px) scale(0.9);
+        transition: 0.3s 0.2s;
+      }
+    }
+
+    #Info_Hex {
+      transition: 0.3s 0.2s;
+      .hex-p1,
+      .hex-p2 {
+        transform-origin: 50% 50%;
+        transform: rotate(25deg);
+      }
+
+      .hex-l1, .hex-l2{
+        fill: white;
+        stroke: transparent;
+      }
+
+      .hex-l2, .hex-l4{
+        stroke: white;
+        fill: transparent;
+      }
+
+
+      .hex-gl1,
+      .hex-gl2 {
+        stroke-width: 2;
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+        transition: 0.3s;
+      }
+    }
+
+    #Info_Hex:hover {
+      .hex-p1{
+        fill: url(#Info_Gradient)
+      }
+      .hex-gl2 {
+        transform: rotate(-45deg);
+      }
+      .hex-gl1 {
+        transform: rotate(45deg);
+      }
+    }
+
+    #Contact_Hex {
+      transition: 0.3s 0s;
+      .hex-p1,
+      .hex-p2 {
+        transform-origin: 50% 50%;
+        transform: rotate(-2deg);
+      }
+
+      .hex-l1, .hex-l2, .hex-l3{
+        fill: white;
+        transition: .3s;
+      }
+
+      .hex-l3{
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+
+
+    }
+
+    #Contact_Hex:hover{
+      .hex-p1{
+        fill: url(#Contact_Gradient);
+      }
+      .hex-l2, .hex-l3{
+        fill: rgb(197, 197, 197);
+      }
+      .hex-l3{
+        animation-name: contact_l3;
+        animation-duration: 2s;
+        animation-delay: .5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+.navbar.active {
+  .hexagon {
+    opacity: 1;
+  }
+  #Main_Hex {
+    .hex-l1 {
+      stroke-dashoffset: -56;
+    }
+    .hex-l2 {
+      stroke-dashoffset: 56;
+    }
+
+    .hex-l1,
+    .hex-l2,
+    .hex-l4,
+    .hex-l3 {
+      transition: 0.3s 0s;
+    }
+
+    .hex-l5,
+    .hex-l6 {
+      transition: 0.6s 0.2s;
+    }
+
+    .hex-l7,
+    .hex-l8 {
+      transition: 0.3s 0.5s;
+    }
+
+    .hex-l3 {
+      stroke-dashoffset: 111;
+    }
+    .hex-l4 {
+      stroke-dashoffset: -111;
+    }
+
+    .hex-l5 {
+      stroke-dashoffset: -333;
+    }
+
+    .hex-l6 {
+      stroke-dashoffset: -333;
+    }
+
+    .hex-l7 {
+      stroke-dashoffset: 0;
+    }
+    .hex-l8 {
+      stroke-dashoffset: 0;
+    }
+  }
+  #Home_Hex {
+    transform: scale(1) translate(-198px, 0);
+    transition: 0.3s 0s;
+  }
+
+  #About_Hex {
+    transform: scale(1) translate(-178px, 67px);
+    transition: 0.3s 0.2s;
+  }
+
+  #Team_Hex {
+    transform: scale(1) translate(-133px, 120px);
+    transition: 0.3s 0.4s;
+  }
+  #Info_Hex {
+    transform: scale(1) translate(-70px, 150px);
+    transition: 0.3s 0.6s;
+  }
+  #Contact_Hex {
+    transform: scale(1) translate(0px, 145px);
+    transition: 0.3s 0.8s;
+  }
+}
+
+.hex-p1 {
+  fill: rgb(221, 61, 46);
+}
+.hex-p2 {
+  fill: #f47a67;
+}

@@ -1,199 +1,66 @@
-const navbar = document.querySelector(".navbar");
-const hexagons = document.querySelectorAll(".hexagon");
-const allSections = document.querySelectorAll(".sector");
-
-const cardWrapper = document.querySelectorAll(".card-box .card-wrapper");
-const h2Info = document.querySelector(".info #info-h2");
-const infoCards = document.querySelectorAll(".info-card-wrapper .info-card");
-const h3Contact = document.querySelector(".contact .contact-content h3");
-const h4Contact = document.querySelector(".contact .contact-content h4");
-const formInputLabel = document.querySelectorAll(".contact .form-input label");
-const formInput = document.querySelectorAll(".contact .form-input input");
-const formInputButton = document.querySelector("#form-input-button");
-const formInputTextarea = document.querySelector("#form-input-textarea");
-
-let sectionSize = [];
-let scrollSectionSize = [];
-
-function checkSize() {
-  if (window.innerWidth > 1024) {
-    navbar.dataset.statement = "window";
-  } else {
-    navbar.dataset.statement = "mobile";
-  }
-}
-
-function setSectionSize() {
-  sectionSize.push(0);
-  allSections.forEach((sector, index) => {
-    if (index === 2) {
-      sectionSize.push(sectionSize[index] + sector.clientHeight);
-    } else {
-      sectionSize.push(sectionSize[index] + sector.clientHeight);
+var morphing = anime({
+  targets: ".waves1",
+  d: [
+    {
+        value:
+        "M0 0V165.9S212.1 202.7 322.4 202.7S583.8 65.8 688 84.2S937.2 266 1063.8 261.9S1225.2 88.3 1427.4 74S1701.1 233.5 1813.4 223.1S1920 180.2 1920 180.2V0H0Z"
+    },
+    {
+      value:
+      "M0 0V165.9S216.1 100.5 326.4 100.5S581.7 216.9 685.9 235.3S937.1 122.7 1063.8 118.6S1227.2 204.6 1429.4 190.3S1703.1 128.8 1815.4 118.5S1919.9 94.3 1919.9 94.3V0H0Z"
+    },
+    {
+      value:
+      "M0 0V207.7447S92.5957 328.2553 241.7021 299.6596S492.9361 150.5532 660.4255 193.4468S909.617 393.617 1048.5106 383.4042S1301.7872 204.7306 1391.6595 191.9398S1620.4255 320.0851 1761.3616 350.7234S1919.9999 316 1919.9999 316V0"
     }
-  });
-
-  sectionSize.pop();
-  sectionSize.shift();
-}
-
-function setScrollActive() {
-  let y = 0;
-  let screenSize = 0;
-  if (navbar.dataset.statement === "mobile") {
-    screenSize = 150;
-  } else {
-    screenSize = 250;
-  }
-
-  for (let x = 0; x < sectionSize.length; x++) {
-    if (window.scrollY > sectionSize[x] - 250) {
-      y++;
-    }
-  }
-
-  allSections.forEach((el, index) => {
-    if (index === y) {
-      el.classList.add("active");
-    }
-  });
-
-  cardWrapper.forEach((card) => {
-    if (card.getBoundingClientRect().top <= window.innerHeight - screenSize) {
-      card.classList.add("active");
-    }
-  });
-
-  if (h2Info.getBoundingClientRect().top <= window.innerHeight - screenSize) {
-    h2Info.classList.add("active");
-  }
-
-  infoCards.forEach((card) => {
-    if (card.getBoundingClientRect().top <= window.innerHeight - screenSize) {
-      card.classList.add("active");
-    }
-  });
-
-  if (
-    h3Contact.getBoundingClientRect().top <=
-    window.innerHeight - screenSize
-  ) {
-    h3Contact.classList.add("active");
-  }
-
-  if (
-    h4Contact.getBoundingClientRect().top <=
-    window.innerHeight - screenSize
-  ) {
-    h4Contact.classList.add("active");
-  }
-
-  formInputLabel.forEach((card) => {
-    if (card.getBoundingClientRect().top <= window.innerHeight - screenSize) {
-      card.classList.add("active");
-    }
-  });
-
-  formInput.forEach((card) => {
-    if (card.getBoundingClientRect().top <= window.innerHeight - screenSize) {
-      card.classList.add("active");
-    }
-  });
-
-  if (
-    formInputButton.getBoundingClientRect().top <=
-    window.innerHeight - 5
-  ) {
-    formInputButton.classList.add("active");
-  }
-
-  if (
-    formInputTextarea.getBoundingClientRect().top <=
-    window.innerHeight - screenSize
-  ) {
-    formInputTextarea.classList.add("active");
-  }
-}
-
-// function setScrollActive() {
-//
-//   if (navbar.dataset.statement === "mobile") {
-//     if (svgContainer.getBoundingClientRect().top > 200) {
-//       svgContainer.classList.add("active");
-//     }
-//     if (text.getBoundingClientRect().top <= window.innerHeight / 4) {
-//       text.classList.add("active");
-//     }
-
-//     fontBoxes.forEach((box) => {
-//       if (box.getBoundingClientRect().top <= window.innerHeight - 150) {
-//         box.classList.add("active");
-//       }
-//     });
-
-//     layoutPrice.forEach((price) => {
-//       if (price.getBoundingClientRect().top <= window.innerHeight - 100) {
-//         price.classList.add("active");
-//       }
-//     });
-
-//     h3.forEach((elH3) => {
-//       if (elH3.getBoundingClientRect().top <= window.innerHeight - 50) {
-//         elH3.classList.add("active");
-//       }
-//     });
-
-//     h4.forEach((elH4) => {
-//       if (elH4.getBoundingClientRect().top <= window.innerHeight - 50) {
-//         elH4.classList.add("active");
-//       }
-//     });
-
-//     if (input.getBoundingClientRect().top <= window.innerHeight - 50) {
-//       input.classList.add("active");
-//     }
-
-//     if (textarea.getBoundingClientRect().top <= window.innerHeight - 50) {
-//       textarea.classList.add("active");
-//     }
-
-//     if (button.getBoundingClientRect().top <= window.innerHeight - 50) {
-//       button.classList.add("active");
-//     }
-
-//     socialBox.forEach((social) => {
-//       if (social.getBoundingClientRect().top <= window.innerHeight - 50) {
-//         social.classList.add("active");
-//       }
-//     });
-//   } else {
-//     if (svgContainer.getBoundingClientRect().top > 200) {
-//       svgContainer.classList.add("active");
-//     }
-//     if (text.getBoundingClientRect().top <= window.innerHeight / 2) {
-//       text.classList.add("active");
-//     }
-//     if (fontWrapper.getBoundingClientRect().top <= window.innerHeight / 2) {
-//       fontWrapper.classList.add("active");
-//     }
-//     if (priceBox.getBoundingClientRect().top <= window.innerHeight / 2) {
-//       priceBox.classList.add("active");
-//     }
-//     if (layout7.getBoundingClientRect().top <= window.innerHeight / 2) {
-//       layout7.classList.add("active");
-//     }
-//   }
-// }
-
-checkSize();
-setSectionSize();
-setScrollActive();
-
-hexagons.forEach((hexagon) => {
-  hexagon.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-  });
+  ],
+  easing: 'linear',
+  duration: 20000,
+  loop: true,
 });
 
-window.addEventListener("resize", checkSize);
-window.addEventListener("scroll", setScrollActive);
+var morphing2 = anime({
+  targets: ".waves2",
+  d: [
+    {
+        value:
+        "M0 0V203.6596S90.5532 168.9362 186.5532 168.9362C339.076 168.9362 396.7452 361.7013 586.8936 258.8085C767.0004 161.3495 850.7 229.3719 1003.5745 281.2766C1131.1269 324.5838 1154.0528 220 1381.4468 220C1501.9574 220 1593.8723 113.7872 1720.5106 128.0851C1846.7579 142.3388 1920 213.8723 1920 213.8723V0H0Z"
+    },
+    {
+      value:
+      "M0 0V145.8911S78.2979 230.2127 174.2979 230.2127C326.8207 230.2127 549.9367 392.3395 740.0851 289.4467C920.1919 191.9877 879.2957 178.3079 1032.1702 230.2127C1159.7226 273.5199 1113.2017 311.9148 1340.5957 311.9148C1461.1063 311.9148 1524.4255 99.4893 1651.0638 113.7871C1777.3111 128.0408 1920 173.0211 1920 173.0211V0H0Z"
+    },
+    {
+      value:
+      "M0 0V107.6596S78.2979 240.4255 174.2979 240.4255C326.8207 240.4255 417.1707 441.3608 607.3192 338.4681C787.426 241.0091 846.6149 151.7549 999.4894 203.6596C1127.0418 246.9668 1154.1141 299.4869 1381.5082 299.4869C1502.0188 299.4869 1583.6596 154.6383 1710.2979 168.9362C1836.5452 183.1899 1920 109.7022 1920 109.7022V0H0Z"
+    },
+    
+  ],
+  easing: 'linear',
+  duration: 16000,
+  loop: true,
+});
+
+// 
+
+var morphing3 = anime({
+  targets: ".waves3",
+  d: [
+    {
+      value:
+      "M0 0V234.2979S86.4681 412.4754 235.5745 383.8796S613.4468 217.9574 780.9362 260.851S1054.6383 420.1701 1193.5319 409.9574S1452.9362 206.2376 1542.8085 193.4468S1655.1489 379.9506 1796.0851 410.5889S1920 191.4042 1920 191.4042V0"
+    },
+    {
+      value:
+      "M0 0V193.0109S27.234 350.7235 176.3404 322.1277S396.9361 181.1915 564.4255 224.0851S797.2766 395.6596 936.1702 385.4468S1250.7234 289.9824 1340.5957 277.1915S1473.3617 309.8724 1614.2978 340.5106S1919.9999 244.5106 1919.9999 244.5106V0"
+    },
+    {
+      value:
+      "M0 0V242.4681S92.5957 328.2553 241.7021 299.6596S492.9361 150.5532 660.4255 193.4468S909.617 393.617 1048.5106 383.4042S1301.7872 204.7306 1391.6595 191.9398S1620.4255 320.0851 1761.3616 350.7234S1919.9999 262.8936 1919.9999 262.8936V0"
+    }
+    
+  ],
+  easing: 'linear',
+  duration: 12000,
+  loop: true,
+});
