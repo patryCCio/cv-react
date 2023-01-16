@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(237, 236, 236);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(223, 223, 223);
+    height: 100px;
+    align-items: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+
+.navbar p{
+    flex-grow: 1;
+    font-size: 1.8em;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: #555;
+}
+
+.navbar a{
+    width: 200px;
+    height: 100%;
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections{
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sections h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sections h2{
+    width: 400px;
+    border-bottom: 2px solid #333;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#post-content{
+    line-height: 1.5em;
+}
+
+.sections p{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sections form{
+    flex-grow: 1;
+    border-top: 2px solid #333;
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections form input{
+    width: 50%;
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid gray;
+    margin-bottom: -1px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.sections form textarea{
+    width: 80%;
+    height: 300px;
+    margin: 20px 0;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 20px;
+    transition: .3s;
+    resize: none;
+}
+
+.sections form input:focus, .sections form textarea:focus{
+    outline: none;
+    border: 1px solid royalblue;
+}
+
+.sections form button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    font-size: 4em;
+    transform: scale(1);
+    font-weight: normal;
+    color: white;
+    background-color: royalblue;
+    transition: .3s;
+}
+
+.sections form button:hover{
+    cursor: pointer;
+    background-color: rgb(77, 117, 236);
+    transform: scale(1.2);
+}
+
+.blog-box{
+    max-width: 800px;
+}
+
+.blog-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.blog-wrapper .blog-header{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.blog-wrapper .blog-content{
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-wrapper .blog-content p{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.blog-wrapper .blog-footer{
+    display: flex;
+    align-items: center;
+}
+
+.blog-wrapper .blog-footer .blog-date{
+    margin-right: 10px;
+    font-size: 14px;
+    color: darkgray;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.blog-wrapper .blog-footer a{
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: rgb(183, 183, 183);
+    padding: 10px 15px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.blog-wrapper .blog-footer a:hover{
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+.blog-wrapper .blog-footer .blog-author{
+    margin-right: 10px;
+    font-size: 14px;
+    color: #222;
+    font-weight: bold;
+}
+
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+

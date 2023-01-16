@@ -1,0 +1,17 @@
+<%- include("header") -%>
+<%- include("navbar") -%>
+<section class="sections">
+  <div class="blog-box">
+    <div class="blog-wrapper">
+      <h3 class="blog-header" style="text-align: center;"><%= title %></h3>
+      <div class="blog-content">
+        <p id="post-content"><%= content %></p>
+      </div>
+      <div class="blog-footer">
+        <p class="blog-author"><%= author %></p>
+        <p class="blog-date">Added: <%= date %></p>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include("footer") -%>
