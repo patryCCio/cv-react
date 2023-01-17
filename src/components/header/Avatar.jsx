@@ -40,7 +40,7 @@ const Avatar = () => {
             <AiFillGithub className="social-icon" />
           </a>
           <a
-            href="https://www.instagram.com/patryccio/"
+            href="https://www.instagram.com/patryccio_art/"
             target="_Blank"
             rel="noopener noreferrer"
             className="card-social"

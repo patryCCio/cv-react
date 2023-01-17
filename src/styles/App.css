@@ -10,6 +10,7 @@ font-family: 'Roboto', sans-serif;
   --background1: #1e2326;
   --background2: #252a2e;
   --background3: #313437;
+  --background1-alpha: rgba(29, 34, 37, 0.7);
   --background2-alpha: rgba(37, 42, 46, 0.6);
   --text1: #d0cccd;
   --text2: #bbbbbb;

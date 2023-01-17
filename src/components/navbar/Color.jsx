@@ -89,6 +89,7 @@ const Color = () => {
     }
 
     handleActiveIndex(index);
+    setIsActive(false);
   };
 
   const handleActiveIndex = (index) => {
@@ -123,6 +124,10 @@ const Color = () => {
         "--background2-alpha",
         "rgba(37, 42, 46, 0.6)"
       );
+      document.documentElement.style.setProperty(
+        "--background1-alpha",
+        "rgba(15, 15, 15, 0.7)"
+      );
     } else {
       document.documentElement.style.setProperty("--background1", "#a5a1a1");
       document.documentElement.style.setProperty("--background2", "#c1bdbd");
@@ -145,6 +150,10 @@ const Color = () => {
       document.documentElement.style.setProperty(
         "--background2-alpha",
         "rgba(193, 189, 189, 0.6)"
+      );
+      document.documentElement.style.setProperty(
+        "--background1-alpha",
+        "rgba(220, 220, 220, 0.7)"
       );
     }
     setIsNight(!isNight);

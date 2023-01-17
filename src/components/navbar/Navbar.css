@@ -10,6 +10,7 @@ font-family: 'Roboto', sans-serif;
   --background1: #1e2326;
   --background2: #252a2e;
   --background3: #313437;
+  --background1-alpha: rgba(29, 34, 37, 0.7);
   --background2-alpha: rgba(37, 42, 46, 0.6);
   --text1: #d0cccd;
   --text2: #bbbbbb;
@@ -203,6 +204,7 @@ nav .navbar li {
   font-size: 1.2em;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav .navbar li a {
@@ -221,6 +223,8 @@ nav .navbar li a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: 1px;
+  background-color: transparent;
 }
 
 nav .navbar li a:hover {
@@ -229,7 +233,7 @@ nav .navbar li a:hover {
 
 nav .navbar li span {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -493,6 +497,7 @@ nav.active {
   }
   nav .navbar li a {
     color: var(--text1);
+    background-color: var(--background1-alpha);
   }
   nav.active {
     -webkit-transform: translateX(0);

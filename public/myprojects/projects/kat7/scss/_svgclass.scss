@@ -1,0 +1,96 @@
+#monitor_svg {
+  #mouse-arrow {
+    transform: translate(0, 0);
+    animation-name: home-mouse;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  #left-tower {
+    opacity: 0;
+  }
+  #arrows {
+    #arrow-left {
+    }
+    #arrow-right {
+      animation-name: home-arrow-right;
+      animation-timing-function: linear;
+      animation-duration: 16s;
+      animation-iteration-count: infinite;
+    }
+  }
+  #images {
+    #left-image {
+      transform-origin: 50% 50%;
+      transform: scale(1.2) translate(2px, -4px);
+      animation-name: home-left-image;
+      animation-duration: 16s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    #right-image {
+      transform-origin: 50% 50%;
+      transform: scale(1) translate(0, 0);
+      animation-name: home-right-image;
+      animation-duration: 16s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+  #left-tower {
+    opacity: 0;
+    animation-name: home-left-tower;
+    animation-timing-function: linear;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+  }
+  #front-tower {
+    opacity: 1;
+    animation-name: home-front-tower;
+    animation-timing-function: linear;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+  }
+  .cls-8 {
+    fill: #d3d1d1;
+  }
+  .cls-9 {
+    fill: #f2ebeb;
+  }
+  .cls-10 {
+    fill: #433e3d;
+  }
+  .cls-13 {
+    stroke: #1d1d1b;
+  }
+  .cls-13,
+  .cls-14 {
+    fill: none;
+    stroke-miterlimit: 10;
+  }
+  .cls-15 {
+    fill: #111;
+  }
+  .cls-14 {
+    stroke: #000;
+    stroke-width: 0.2px;
+  }
+  .cls-18 {
+    fill: #972226;
+  }
+  .cls-20 {
+    fill: #1d1d1b;
+  }
+  .cls-21 {
+    fill: #eb0000;
+  }
+  .cls-22 {
+    fill: #2e222a;
+  }
+  .cls-24 {
+    fill: #5f001a;
+  }
+  .cls-25 {
+    fill: #ddd9d9;
+  }
+}

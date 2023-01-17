@@ -163,7 +163,9 @@ const Portfolio = () => {
         <div className="portfolio-body">
           <h3 className="portfolio-title">{title}</h3>
           {activeIndex === 0 && <p className="portfolio-description">{desc}</p>}
-          {activeIndex === 1 && (
+          {activeIndex === 1 && <p className="portfolio-description">{desc}</p>}
+          {activeIndex === 2 && <p className="portfolio-description">{desc}</p>}
+          {activeIndex === 3 && (
             <div className="portfolio-drawings">
               <img
                 src={PortfolioDB[activeIndex].array[actualNumber].url}
@@ -171,8 +173,6 @@ const Portfolio = () => {
               />
             </div>
           )}
-          {activeIndex === 2 && <p className="portfolio-description">{desc}</p>}
-          {activeIndex === 3 && <p className="portfolio-description">{desc}</p>}
         </div>
         <div className="portfolio-bottom">
           {activeIndex === 0 && (
@@ -186,6 +186,16 @@ const Portfolio = () => {
           )}
 
           {activeIndex === 1 && (
+            <a
+              target="_blank"
+              href={`./myprojects/projects/kat${actualNumber}/index.html`}
+              className="portfolio-bottom-button"
+            >
+              Zobacz
+            </a>
+          )}
+
+          {activeIndex === 3 && (
             <>
               <button
                 onClick={() => setToggler(!toggler)}
@@ -198,16 +208,6 @@ const Portfolio = () => {
                 sources={[PortfolioDB[activeIndex].array[actualNumber].url]}
               />
             </>
-          )}
-
-          {activeIndex === 2 && (
-            <a
-              target="_blank"
-              href={`./myprojects/projects/kat${actualNumber}/index.html`}
-              className="portfolio-bottom-button"
-            >
-              Zobacz
-            </a>
           )}
 
           <p className="portfolio-size">

@@ -1,7 +1,6 @@
 import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
-import { BrowserRouter as Router } from "react-router-dom";
 import "./styles/App.css";
 import About from "./pages/about/About";
 import Experience from "./pages/experience/Experience";

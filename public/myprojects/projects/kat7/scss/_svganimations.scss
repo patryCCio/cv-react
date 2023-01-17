@@ -1,0 +1,156 @@
+@keyframes home-mouse{
+    0%{
+        transform: translate(0, 0);
+    }
+
+    17%{
+        transform: translate(0, 0);
+    }
+
+
+    20%{
+        transform: translate(55px, -35px);
+    }
+    97%{
+        transform: translate(55px, -35px);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes home-arrow-right{
+    0%{
+        fill: #1d1d1b;
+    }
+
+    19%{
+        fill: #1d1d1b;
+    }
+
+    20%{
+        fill: #a2a2a0;
+    }
+
+    39%{
+        fill: #a2a2a0;
+    }
+    40%{
+        fill: #e2400a;
+    }
+    41%{
+        fill: #a2a2a0;
+    }
+
+    70%{
+        fill:#a2a2a0;
+    }
+    71%{
+        fill: #e2400a;
+    }
+    72%{
+        fill: #a2a2a0;
+    }
+
+
+    97%{
+        fill: #a2a2a0;
+    }
+    98%{
+        fill: #1d1d1b;
+    }
+    100%{
+        fill: #1d1d1b;
+    }
+}
+
+@keyframes home-left-image{
+    0%{
+        transform: scale(1.2) translate(2px, -4px);
+    }
+
+    40%{
+        transform: scale(1.2) translate(2px, -4px);
+    }
+    41%{
+        transform: scale(1) translate(0, 0);
+    }
+
+    71%{
+        transform: scale(1) translate(0, 0);
+    }
+    72%{
+        transform: scale(1.2) translate(2px, -4px);
+    }
+
+    100%{
+        transform: scale(1.2) translate(2px, -4px);
+    }
+}
+
+@keyframes home-right-image{
+    0%{
+        transform: scale(1) translate(0, 0);
+    }
+
+    40%{
+        transform: scale(1) translate(0, 0);
+    }
+    41%{
+        transform: scale(1.2) translate(-2px, -4px);
+    }
+
+    71%{
+        transform: scale(1.2) translate(-2px, -4px);
+    }
+    72%{
+        transform: scale(1) translate(0, 0);
+    }
+
+    100%{
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+@keyframes home-left-tower{
+    0%{
+        opacity: 0;
+    }
+    42%{
+        opacity: 0;
+    }
+    43%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    71%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes home-front-tower{
+    0%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    41%{
+        opacity: 0;
+    }
+    71%{
+        opacity: 0;
+    }
+    73%{
+        opacity: 1; 
+    }
+    100%{
+        opacity: 1;
+    }
+}
