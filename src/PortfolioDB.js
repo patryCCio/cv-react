@@ -1440,6 +1440,22 @@ export const PortfolioDB = [
       },
 
       {
+        title: "Logo MV17 dla kolegi",
+        url: "https://res.cloudinary.com/dgubzvsvn/image/upload/v1674140482/cv/drawings/michall_l8fofi.jpg",
+        html: false,
+        css: false,
+        scss: false,
+        js: false,
+        react: false,
+        node: false,
+        mysql: false,
+        illustrator: true,
+        photoshop: false,
+        pencil: false,
+        bootstrap: false,
+      },
+
+      {
         title: "Goku MUI",
         url: "https://res.cloudinary.com/dgubzvsvn/image/upload/v1673851941/cv/drawings/goku_rdefja.jpg",
         html: false,
