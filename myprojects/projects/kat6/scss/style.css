@@ -1,0 +1,369 @@
+#an_1 .social .social-circle {
+  stroke-dasharray: 913;
+  stroke-dashoffset: 913;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: stroke-dashoffset 0.3s 0.2s, stroke-dasharray 0.2s 0s;
+  transition: stroke-dashoffset 0.3s 0.2s, stroke-dasharray 0.2s 0s;
+}
+
+#an_1 .social .fa-path {
+  stroke-dasharray: 493;
+  stroke-dashoffset: -493;
+}
+
+#an_1 .social .yt-path {
+  stroke-dasharray: 472;
+  stroke-dashoffset: -472;
+}
+
+#an_1 .social .yt-path2 {
+  stroke-dasharray: 136;
+  stroke-dashoffset: -136;
+}
+
+#an_1 .social .tw-path {
+  stroke-dasharray: 702;
+  stroke-dashoffset: -702;
+}
+
+#an_1 .social .social-path,
+#an_1 .social .social-path2 {
+  stroke-width: 2;
+  -webkit-transition: fill 0.2s 0.4s, stroke-dashoffset 0.3s 0s;
+  transition: fill 0.2s 0.4s, stroke-dashoffset 0.3s 0s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#an_1 .social:hover .social-circle {
+  stroke-dasharray: 8;
+  -webkit-transition: stroke-dashoffset 0.3s, stroke-dasharray 0.2s 0.3s;
+  transition: stroke-dashoffset 0.3s, stroke-dasharray 0.2s 0.3s;
+  stroke-dashoffset: 0;
+  -webkit-animation-name: roundarray;
+          animation-name: roundarray;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+#an_1 .social:hover .social-path,
+#an_1 .social:hover .social-path2 {
+  stroke-dashoffset: 0;
+  fill: transparent;
+  -webkit-transition: fill 0.2s 0s, stroke-dashoffset 0.4s 0.3s;
+  transition: fill 0.2s 0s, stroke-dashoffset 0.4s 0.3s;
+}
+
+#an_2 .social .social-circle {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#an_2 .social .fa-path2,
+#an_2 .social .yt-path3,
+#an_2 .social .yt-path4,
+#an_2 .social .tw-path2 {
+  fill: transparent;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#an_2 .social .fa-path2 {
+  stroke: #2b4a98;
+}
+
+#an_2 .social .yt-path3,
+#an_2 .social .yt-path4 {
+  stroke: #fe0000;
+}
+
+#an_2 .social .tw-path2 {
+  stroke: #1d9bf0;
+}
+
+#an_2 .social:hover .social-circle {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#an_2 .social:hover .fa-path2,
+#an_2 .social:hover .yt-path3,
+#an_2 .social:hover .yt-path4,
+#an_2 .social:hover .tw-path2 {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0;
+  stroke-width: 5;
+}
+
+#an_3 .social .social-circle {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#an_3 .social #fa-inner,
+#an_3 .social #yt-inner,
+#an_3 .social #tw-inner {
+  fill: transparent;
+}
+
+#an_3 #fa-inner {
+  fill: #fff;
+  stroke: #2b4a98;
+  stroke-width: 2;
+}
+
+#an_3 #yt-inner {
+  fill: #fff;
+  stroke: #fe0000;
+  stroke-width: 2;
+}
+
+#an_3 #tw-inner {
+  fill: #fff;
+  stroke: #1d9bf0;
+  stroke-width: 2;
+}
+
+#an_3 .social:hover .social-path,
+#an_3 .social:hover .social-path2 {
+  stroke: #fff;
+  stroke-width: 4;
+}
+
+#an_3 .social:hover .fa-circle {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  fill: #2b4a98;
+}
+
+#an_3 .social:hover .yt-circle {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  fill: #fe0000;
+}
+
+#an_3 .social:hover .yt-path2 {
+  fill: transparent;
+}
+
+#an_3 .social:hover .tw-circle {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  fill: #1d9bf0;
+}
+
+#an_4 .social .social-circle {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: 0.3s 0.4s;
+  transition: 0.3s 0.4s;
+}
+
+#an_4 .social #fa-logo2,
+#an_4 .social #yt-logo2,
+#an_4 .social #tw-logo2 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: 0.3s 0s;
+  transition: 0.3s 0s;
+}
+
+#an_4 .social:hover .social-circle {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#an_4 .social:hover #fa-logo2,
+#an_4 .social:hover #yt-logo2,
+#an_4 .social:hover #tw-logo2 {
+  -webkit-transition: 0.3s 0.4s;
+  transition: 0.3s 0.4s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@-webkit-keyframes roundarray {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+@keyframes roundarray {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  padding-top: 100px;
+}
+
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  color: #4e4e4e;
+  width: 100%;
+  height: 100px;
+  background-color: #ddd;
+}
+
+svg .fa-circle,
+svg .yt-circle,
+svg .tw-circle {
+  fill: none;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+svg .fa-circle {
+  stroke: #2b4a98;
+}
+
+svg .fa-path {
+  fill: #2b4a98;
+  stroke: #2b4a98;
+}
+
+svg .yt-circle {
+  stroke: #fe0000;
+}
+
+svg .yt-path {
+  fill: #fe0000;
+  stroke: #fe0000;
+}
+
+svg .yt-path2 {
+  fill: #fff;
+  stroke: #fe0000;
+}
+
+svg .tw-circle {
+  stroke: #1d9bf0;
+}
+
+svg .tw-path {
+  fill: #1d9bf0;
+  stroke: #1d9bf0;
+}
+
+svg #fa-logo2 {
+  stroke: #2b4a98;
+  stroke-width: 3;
+}
+
+svg #yt-logo2 {
+  stroke: #fe0000;
+  stroke-width: 3;
+}
+
+svg #tw-logo2 {
+  stroke: #1d9bf0;
+  stroke-width: 3;
+}
+
+.social {
+  width: 140px;
+  margin: 100px 20px;
+}
+
+.social-box {
+  width: 100%;
+  background-color: #f3f3f3;
+  margin-bottom: 80px;
+}
+
+.social-box .social-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.social-box .social-div svg:hover {
+  cursor: pointer;
+}
+
+.social-box h2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  background-color: #c5c4c4;
+  color: #3d3d3d;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=style.css.map */
